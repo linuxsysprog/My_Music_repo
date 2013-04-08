@@ -31,8 +31,7 @@ SFL
 /;
 
 find({ wanted => \&wanted }, $ARGV[0]);
-
-<STDIN>;
+pause();
 
 sub wanted {
 	if (! -f) {
@@ -50,5 +49,10 @@ sub wanted {
 			return;
 		}
 	}
+}
+
+sub pause {
+	print "Press Enter to continue . . . ";
+	<STDIN>;
 }
 
