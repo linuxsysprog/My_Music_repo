@@ -10,14 +10,14 @@ x Install script into the Windows Explorer context menu
 ? Check input to be a folder
 x Remove files with File::Find x) find only files. For each file:
 	x Check for error x) Print error
-? Report total number of deleted files
 x Pause script
+- add counters
+- re-test
 
 =cut
 
-use Data::Dumper;
+use Common;
 use File::Find;
-
 # Not a subroutine reference at C:/strawberry/perl/vendor/lib/File/Find/Rule.pm line 73.
 # use File::Find::Rule;
 
@@ -31,10 +31,10 @@ SFL
 /;
 
 find({ wanted => \&wanted }, $ARGV[0]);
-pause();
+Common::pause();
 
 sub wanted {
-	if (! -f) {
+	if (! -f $File::Find::name) {
 		return;
 	}
 	
@@ -49,10 +49,5 @@ sub wanted {
 			return;
 		}
 	}
-}
-
-sub pause {
-	print "Press Enter to continue . . . ";
-	<STDIN>;
 }
 
