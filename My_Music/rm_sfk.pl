@@ -6,6 +6,8 @@ Deletes files with certain extensions from a directory recursing into subdirs.
 x Install script into the Windows Explorer context menu
 	x Test with a x) file x) folder ?) current directory
 	/ Test with !) non-English filenames and x) spaces
+x print errors with warn "\n"
+x make output consistent with toggle vob script
 
 =cut
 
@@ -14,7 +16,7 @@ use File::Find;
 use Cwd;
 
 if (! -d $ARGV[0]) {
-	print $ARGV[0], " is not a directory\n";
+	warn $ARGV[0], " is not a directory\n";
 	exit 1;
 }
 
@@ -42,11 +44,13 @@ find(\&wanted, $ARGV[0]);
 print "Total entries (files and dirs) found: $entries\n";
 print "Plain files found: $plain_files\n";
 print "Files matching a pattern found: $matching_files\n";
-if ($matching_files > 0) {
-	print "Files successfully unlinked: $unlinked\n";
-	print "Files failed to unlink: $failed\n";
-} else {
+if (!$matching_files) {
 	print "Nothing to unlink.\n";
+	exit;
+}
+print "Files unlinked: $unlinked\n";
+if ($failed) {
+	warn "Files failed to unlink: $failed\n";
 }
 
 Common::pause();
@@ -79,7 +83,7 @@ sub wanted {
 		print "unlinked $file\n"
 	} else {
 		$failed++;
-		print "failed to unlink $file: $!\n"
+		warn "failed to unlink $file: $!\n"
 	}
 }
 
