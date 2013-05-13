@@ -15,9 +15,14 @@ use Common;
 use File::Find;
 use Cwd;
 
-if (! -d $ARGV[0]) {
-	warn $ARGV[0], " is not a directory\n";
-	exit 1;
+my $dir = getcwd() . '/' . $ARGV[0];
+if ($ARGV[1] eq 'gui') {
+	$dir = $ARGV[0];
+}
+
+if (! -d $dir) {
+	warn "$dir is not a directory\n";
+	Common::exit(1);
 }
 
 my @rm_exts = qw/
@@ -36,9 +41,9 @@ my $matching_files = 0;
 my $unlinked = 0;
 my $failed = 0;
 
-print "Cleaning ", uc join(' ', sort @rm_exts), " out of ", getcwd(), '/', $ARGV[0], "\n";
+print "Cleaning ", uc join(' ', sort @rm_exts), " out of $dir\n";
 
-find(\&wanted, $ARGV[0]);
+find(\&wanted, $dir);
 
 # Print counters
 print "Total entries (files and dirs) found: $entries\n";
@@ -46,14 +51,14 @@ print "Plain files found: $plain_files\n";
 print "Files matching a pattern found: $matching_files\n";
 if (!$matching_files) {
 	print "Nothing to unlink.\n";
-	exit;
+	Common::exit(1);
 }
 print "Files unlinked: $unlinked\n";
 if ($failed) {
 	warn "Files failed to unlink: $failed\n";
 }
 
-Common::pause();
+Common::pause;
 
 sub wanted {
 	$entries++;

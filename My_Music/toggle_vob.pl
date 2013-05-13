@@ -7,6 +7,8 @@ x Install script into the Windows Explorer context menu
 	x Test with a x) file x) folder ?) current directory
 	/ Test with !) non-English filenames and x) spaces
 x skip over . and ..
+x adjust the script to run from Windows Explorer context menu
+	x distinguish between shell arg and "%1"
 
 =cut
 
@@ -15,9 +17,13 @@ use Cwd;
 use File::Basename;
 
 my $dir = getcwd() . '/' . $ARGV[0];
+if ($ARGV[1] eq 'gui') {
+	$dir = $ARGV[0];
+}
+
 if (! -d $dir) {
 	warn "$dir is not a directory\n";
-	exit 1;
+	Common::exit(1);
 }
 
 # Reset counters
@@ -34,8 +40,7 @@ print "Renaming VOB<->avi in $dir\n";
 my $dh;
 if (!opendir($dh, $dir)) {
 	warn "can't opendir $dir: $!\n";
-	Common::pause();
-	exit(1);
+	Common::exit(1);
 }
 
 while (readdir $dh) {
@@ -68,7 +73,7 @@ print "AVI files found: ", scalar @avi_files, "\n";
 
 if (!@vob_files && !@avi_files) {
 	print "Nothing to rename.\n";
-	exit;
+	Common::exit;
 }
 
 rename_(\@vob_files, 'vob2avi');
@@ -82,7 +87,7 @@ if ($failed) {
 	warn "Files failed to rename: $failed\n";
 }
 
-Common::pause();
+Common::pause;
 
 sub rename_ {
 	my $files = shift;

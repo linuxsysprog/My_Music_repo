@@ -11,4 +11,9 @@ sub pause {
 	<STDIN>;
 }
 
+sub exit {
+	pause;
+	exit @_;
+}
+
 1;
