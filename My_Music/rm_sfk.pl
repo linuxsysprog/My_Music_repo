@@ -30,6 +30,7 @@ bak
 dll
 exe
 pk
+scc
 sfk
 sfl
 /;
