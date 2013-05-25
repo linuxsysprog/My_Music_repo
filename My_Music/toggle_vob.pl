@@ -1,6 +1,6 @@
 =head1
 
-Renames all *.VOB files to *.avi and vice versa in a folder.
+Renames all *.VOB files to *.mpg and vice versa in a folder.
 The script does not recurse into subdirs.
 
 x Install script into the Windows Explorer context menu
@@ -30,12 +30,12 @@ if (! -d $dir) {
 my $entries = 0;
 my $plain_files = 0;
 my @vob_files = ();
-my @avi_files = ();
+my @mpg_files = ();
 my $renamed = 0;
 my $exists = 0;
 my $failed = 0;
 
-print "Renaming VOB<->avi in $dir\n";
+print "Renaming VOB<->mpg in $dir\n";
 
 my $dh;
 if (!opendir($dh, $dir)) {
@@ -59,8 +59,8 @@ while (readdir $dh) {
 
 	if ($file =~ /\.vob$/i) {
 		push @vob_files, $file;
-	} elsif ($file =~ /\.avi$/i) {
-		push @avi_files, $file;
+	} elsif ($file =~ /\.mpg$/i) {
+		push @mpg_files, $file;
 	}
 }
 
@@ -69,15 +69,15 @@ closedir $dh;
 print "Total entries (files and dirs) found: $entries\n";
 print "Plain files found: $plain_files\n";
 print "VOB files found: ", scalar @vob_files, "\n";
-print "AVI files found: ", scalar @avi_files, "\n";
+print "mpg files found: ", scalar @mpg_files, "\n";
 
-if (!@vob_files && !@avi_files) {
+if (!@vob_files && !@mpg_files) {
 	print "Nothing to rename.\n";
 	Common::exit;
 }
 
-rename_(\@vob_files, 'vob2avi');
-rename_(\@avi_files, 'avi2vob');
+rename_(\@vob_files, 'vob2mpg');
+rename_(\@mpg_files, 'mpg2vob');
 
 print "Files renamed: $renamed\n";
 if ($exists) {
@@ -96,10 +96,10 @@ sub rename_ {
 	foreach my $file (@$files) {
 		my $new_file = $file;
 		
-		if ($direction eq 'vob2avi') {
-			$new_file =~ s/\.vob$/\.avi/i;
+		if ($direction eq 'vob2mpg') {
+			$new_file =~ s/\.vob$/\.mpg/i;
 		} else {
-			$new_file =~ s/\.avi$/\.VOB/i;
+			$new_file =~ s/\.mpg$/\.VOB/i;
 		}
 		
 		my $msg = basename($file) . ' -> ' . basename($new_file);
