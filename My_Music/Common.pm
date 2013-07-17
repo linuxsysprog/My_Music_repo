@@ -49,4 +49,19 @@ sub find {
 	closedir $dh;
 }
 
+sub create_config_file {
+	my $file = shift;
+	my $contents = shift;
+	
+	my $fh;
+	if (!open($fh, '>', $file)) {
+		warn "cannot open $file for writing: $!";
+		return;
+	}
+	
+	print $fh $contents;
+	
+	close $fh;
+}
+
 1;
