@@ -1,0 +1,177 @@
+
+
+[ ]MainWin "Export"
+	( )Tag="Export Sound File*"
+	( )Class="#32770"
+	( )Parent=1
+	( )Child=0
+	[ ]MainWin "Source"
+		( )Tag="Source"
+		( )Class="Button"
+		( )Parent=0
+		( )Child=1
+	[ ]MainWin "Whole"
+		( )Tag="Whole file"
+		( )Class="Button"
+		( )Parent=0
+		( )Child=1
+	[ ]MainWin "Current"
+		( )Tag="Current selection"
+		( )Class="Button"
+		( )Parent=0
+		( )Child=1
+	[ ]MainWin "Button4"
+		( )Tag=4
+		( )Class="Button"
+		( )Parent=0
+		( )Child=1
+	[ ]MainWin "Edit1"
+		( )Tag=1
+		( )Class="Edit"
+		( )Parent=0
+		( )Child=1
+	[ ]MainWin "msctls_updown321"
+		( )Tag=1
+		( )Class="msctls_updown32"
+		( )Parent=0
+		( )Child=1
+	[ ]MainWin "How"
+		( )Tag="How many repetitions"
+		( )Class="Static"
+		( )Parent=0
+		( )Child=1
+	[ ]MainWin "Effects"
+		( )Tag="Effects"
+		( )Class="Button"
+		( )Parent=0
+		( )Child=1
+	[ ]MainWin "Mono_Karaoke"
+		( )Tag="Mono/Karaoke"
+		( )Class="Button"
+		( )Parent=0
+		( )Child=1
+	[ ]MainWin "Tuning"
+		( )Tag="Tuning"
+		( )Class="Button"
+		( )Parent=0
+		( )Child=1
+	[ ]MainWin "EQ"
+		( )Tag="EQ"
+		( )Class="Button"
+		( )Parent=0
+		( )Child=1
+	[ ]MainWin "Speed"
+		( )Tag="Speed"
+		( )Class="Button"
+		( )Parent=0
+		( )Child=1
+	[ ]MainWin "Volume"
+		( )Tag="Volume"
+		( )Class="Button"
+		( )Parent=0
+		( )Child=1
+	[ ]MainWin "Format"
+		( )Tag="Format"
+		( )Class="Button"
+		( )Parent=0
+		( )Child=1
+	[ ]MainWin "wav"
+		( )Tag="wav (Microsoft)"
+		( )Class="Button"
+		( )Parent=0
+		( )Child=1
+	[ ]MainWin "aiff"
+		( )Tag="aiff (Apple)"
+		( )Class="Button"
+		( )Parent=0
+		( )Child=1
+	[ ]MainWin "m4a"
+		( )Tag="m4a (Compressed)"
+		( )Class="Button"
+		( )Parent=0
+		( )Child=1
+	[ ]MainWin "Button15"
+		( )Tag=15
+		( )Class="Button"
+		( )Parent=0
+		( )Child=1
+	[ ]MainWin "Sample"
+		( )Tag="Sample Rate Options"
+		( )Class="Button"
+		( )Parent=0
+		( )Child=1
+	[ ]MainWin "22050"
+		( )Tag="22050"
+		( )Class="Button"
+		( )Parent=0
+		( )Child=1
+	[ ]MainWin "44100"
+		( )Tag="44100 (CD)"
+		( )Class="Button"
+		( )Parent=0
+		( )Child=1
+	[ ]MainWin "48K"
+		( )Tag="48K"
+		( )Class="Button"
+		( )Parent=0
+		( )Child=1
+	[ ]MainWin "96K"
+		( )Tag="96K"
+		( )Class="Button"
+		( )Parent=0
+		( )Child=1
+	[ ]MainWin "Same"
+		( )Tag="Same as original"
+		( )Class="Button"
+		( )Parent=0
+		( )Child=1
+	[ ]MainWin "Custom"
+		( )Tag="Custom"
+		( )Class="Button"
+		( )Parent=0
+		( )Child=1
+	[ ]MainWin "Button23"
+		( )Tag=23
+		( )Class="Button"
+		( )Parent=0
+		( )Child=1
+	[ ]MainWin "Sample"
+		( )Tag="Sample Rate:"
+		( )Class="Static"
+		( )Parent=0
+		( )Child=1
+	[ ]MainWin "Edit2"
+		( )Tag=2
+		( )Class="Edit"
+		( )Parent=0
+		( )Child=1
+	[ ]MainWin "File"
+		( )Tag="File name:"
+		( )Class="Static"
+		( )Parent=0
+		( )Child=1
+	[ ]MainWin "Edit3"
+		( )Tag=3
+		( )Class="Edit"
+		( )Parent=0
+		( )Child=1
+	[ ]MainWin "_Browse___"
+		( )Tag="&Browse..."
+		( )Class="Button"
+		( )Parent=0
+		( )Child=1
+	[ ]MainWin "OK"
+		( )Tag="OK"
+		( )Class="Button"
+		( )Parent=0
+		( )Child=1
+	[ ]MainWin "Cancel"
+		( )Tag="Cancel"
+		( )Class="Button"
+		( )Parent=0
+		( )Child=1
+	[ ]MainWin "Help___"
+		( )Tag="Help..."
+		( )Class="Button"
+		( )Parent=0
+		( )Child=1

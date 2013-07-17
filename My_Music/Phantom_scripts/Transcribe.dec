@@ -1,0 +1,757 @@
+
+
+[ ]MainWin "Transcribe_"
+	( )Tag="Transcribe!*"
+	( )Class="wxWindowClass"
+	( )Parent=1
+	( )Child=0
+	[ ]Menu 
+		( )Tag=""
+		( )Class="Menu"
+		( )Parent=0
+		( )Child=1
+		[ ]Menu "_File"
+			( )Tag=0
+			( )Class="Menu"
+			( )Parent=1
+			( )Child=1
+			[ ]MenuItem "_Open___"
+				( )Tag=0
+				( )Class="MenuItem"
+				( )Parent=0
+				( )Child=1
+			[ ]MenuItem "_Close"
+				( )Tag=1
+				( )Class="MenuItem"
+				( )Parent=0
+				( )Child=1
+			[ ]MenuItem "_Save"
+				( )Tag=2
+				( )Class="MenuItem"
+				( )Parent=0
+				( )Child=1
+			[ ]MenuItem "Save"
+				( )Tag=3
+				( )Class="MenuItem"
+				( )Parent=0
+				( )Child=1
+			[ ]Menu "Recent"
+				( )Tag=4
+				( )Class="Menu"
+				( )Parent=1
+				( )Child=1
+				[ ]MenuItem ""
+					( )Tag=0
+					( )Class="MenuItem"
+					( )Parent=0
+					( )Child=1
+				[ ]MenuItem "_Clear"
+					( )Tag=1
+					( )Class="MenuItem"
+					( )Parent=0
+					( )Child=1
+			[ ]MenuItem ""
+				( )Tag=5
+				( )Class="MenuItem"
+				( )Parent=0
+				( )Child=1
+			[ ]MenuItem "Cop_y"
+				( )Tag=6
+				( )Class="MenuItem"
+				( )Parent=0
+				( )Child=1
+			[ ]MenuItem "_Import"
+				( )Tag=7
+				( )Class="MenuItem"
+				( )Parent=0
+				( )Child=1
+			[ ]MenuItem "_Record"
+				( )Tag=8
+				( )Class="MenuItem"
+				( )Parent=0
+				( )Child=1
+			[ ]MenuItem ""
+				( )Tag=9
+				( )Class="MenuItem"
+				( )Parent=0
+				( )Child=1
+			[ ]MenuItem "_Export"
+				( )Tag=10
+				( )Class="MenuItem"
+				( )Parent=0
+				( )Child=1
+			[ ]MenuItem "Expor_t"
+				( )Tag=11
+				( )Class="MenuItem"
+				( )Parent=0
+				( )Child=1
+			[ ]MenuItem ""
+				( )Tag=12
+				( )Class="MenuItem"
+				( )Parent=0
+				( )Child=1
+			[ ]MenuItem "Export"
+				( )Tag=13
+				( )Class="MenuItem"
+				( )Parent=0
+				( )Child=1
+			[ ]MenuItem "Export"
+				( )Tag=14
+				( )Class="MenuItem"
+				( )Parent=0
+				( )Child=1
+			[ ]MenuItem ""
+				( )Tag=15
+				( )Class="MenuItem"
+				( )Parent=0
+				( )Child=1
+			[ ]MenuItem "_Preferences___"
+				( )Tag=16
+				( )Class="MenuItem"
+				( )Parent=0
+				( )Child=1
+			[ ]MenuItem "_Keyboard"
+				( )Tag=17
+				( )Class="MenuItem"
+				( )Parent=0
+				( )Child=1
+			[ ]MenuItem "_MIDI"
+				( )Tag=18
+				( )Class="MenuItem"
+				( )Parent=0
+				( )Child=1
+			[ ]MenuItem "Foot"
+				( )Tag=19
+				( )Class="MenuItem"
+				( )Parent=0
+				( )Child=1
+			[ ]MenuItem ""
+				( )Tag=20
+				( )Class="MenuItem"
+				( )Parent=0
+				( )Child=1
+			[ ]MenuItem "E_xit"
+				( )Tag=21
+				( )Class="MenuItem"
+				( )Parent=0
+				( )Child=1
+		[ ]Menu "_View"
+			( )Tag=1
+			( )Class="Menu"
+			( )Parent=1
+			( )Child=1
+			[ ]MenuItem "_Always"
+				( )Tag=0
+				( )Class="MenuItem"
+				( )Parent=0
+				( )Child=1
+			[ ]MenuItem ""
+				( )Tag=1
+				( )Class="MenuItem"
+				( )Parent=0
+				( )Child=1
+			[ ]Menu "_Navigation"
+				( )Tag=2
+				( )Class="Menu"
+				( )Parent=1
+				( )Child=1
+				[ ]MenuItem "_Show"
+					( )Tag=0
+					( )Class="MenuItem"
+					( )Parent=0
+					( )Child=1
+				[ ]MenuItem "_Hide"
+					( )Tag=1
+					( )Class="MenuItem"
+					( )Parent=0
+					( )Child=1
+				[ ]MenuItem ""
+					( )Tag=2
+					( )Class="MenuItem"
+					( )Parent=0
+					( )Child=1
+				[ ]MenuItem "_Include"
+					( )Tag=3
+					( )Class="MenuItem"
+					( )Parent=0
+					( )Child=1
+				[ ]MenuItem "Include"
+					( )Tag=4
+					( )Class="MenuItem"
+					( )Parent=0
+					( )Child=1
+			[ ]MenuItem "Show"
+				( )Tag=3
+				( )Class="MenuItem"
+				( )Parent=0
+				( )Child=1
+			[ ]MenuItem "Show"
+				( )Tag=4
+				( )Class="MenuItem"
+				( )Parent=0
+				( )Child=1
+			[ ]MenuItem "Show"
+				( )Tag=5
+				( )Class="MenuItem"
+				( )Parent=0
+				( )Child=1
+			[ ]MenuItem "Show"
+				( )Tag=6
+				( )Class="MenuItem"
+				( )Parent=0
+				( )Child=1
+			[ ]MenuItem "Show"
+				( )Tag=7
+				( )Class="MenuItem"
+				( )Parent=0
+				( )Child=1
+			[ ]MenuItem "Show"
+				( )Tag=8
+				( )Class="MenuItem"
+				( )Parent=0
+				( )Child=1
+			[ ]MenuItem ""
+				( )Tag=9
+				( )Class="MenuItem"
+				( )Parent=0
+				( )Child=1
+			[ ]MenuItem "_Split"
+				( )Tag=10
+				( )Class="MenuItem"
+				( )Parent=0
+				( )Child=1
+			[ ]MenuItem "_Unsplit"
+				( )Tag=11
+				( )Class="MenuItem"
+				( )Parent=0
+				( )Child=1
+			[ ]MenuItem ""
+				( )Tag=12
+				( )Class="MenuItem"
+				( )Parent=0
+				( )Child=1
+			[ ]MenuItem "_Fit"
+				( )Tag=13
+				( )Class="MenuItem"
+				( )Parent=0
+				( )Child=1
+			[ ]MenuItem "Fit"
+				( )Tag=14
+				( )Class="MenuItem"
+				( )Parent=0
+				( )Child=1
+			[ ]MenuItem "Zoom"
+				( )Tag=15
+				( )Class="MenuItem"
+				( )Parent=0
+				( )Child=1
+			[ ]MenuItem "Zoom"
+				( )Tag=16
+				( )Class="MenuItem"
+				( )Parent=0
+				( )Child=1
+			[ ]MenuItem ""
+				( )Tag=17
+				( )Class="MenuItem"
+				( )Parent=0
+				( )Child=1
+			[ ]MenuItem "_Vertical"
+				( )Tag=18
+				( )Class="MenuItem"
+				( )Parent=0
+				( )Child=1
+			[ ]MenuItem "V_ertical"
+				( )Tag=19
+				( )Class="MenuItem"
+				( )Parent=0
+				( )Child=1
+		[ ]Menu "_Play"
+			( )Tag=2
+			( )Class="Menu"
+			( )Parent=1
+			( )Child=1
+			[ ]MenuItem "Play"
+				( )Tag=0
+				( )Class="MenuItem"
+				( )Parent=0
+				( )Child=1
+			[ ]MenuItem "Play"
+				( )Tag=1
+				( )Class="MenuItem"
+				( )Parent=0
+				( )Child=1
+			[ ]MenuItem "Play"
+				( )Tag=2
+				( )Class="MenuItem"
+				( )Parent=0
+				( )Child=1
+			[ ]MenuItem "Play"
+				( )Tag=3
+				( )Class="MenuItem"
+				( )Parent=0
+				( )Child=1
+			[ ]MenuItem ""
+				( )Tag=4
+				( )Class="MenuItem"
+				( )Parent=0
+				( )Child=1
+			[ ]MenuItem "_Stop"
+				( )Tag=5
+				( )Class="MenuItem"
+				( )Parent=0
+				( )Child=1
+			[ ]MenuItem "_Pause"
+				( )Tag=6
+				( )Class="MenuItem"
+				( )Parent=0
+				( )Child=1
+			[ ]MenuItem ""
+				( )Tag=7
+				( )Class="MenuItem"
+				( )Parent=0
+				( )Child=1
+			[ ]MenuItem "_Loop"
+				( )Tag=8
+				( )Class="MenuItem"
+				( )Parent=0
+				( )Child=1
+			[ ]MenuItem "Sc_roll"
+				( )Tag=9
+				( )Class="MenuItem"
+				( )Parent=0
+				( )Child=1
+			[ ]MenuItem ""
+				( )Tag=10
+				( )Class="MenuItem"
+				( )Parent=0
+				( )Child=1
+			[ ]MenuItem "Speed"
+				( )Tag=11
+				( )Class="MenuItem"
+				( )Parent=0
+				( )Child=1
+		[ ]Menu "_Markers"
+			( )Tag=3
+			( )Class="Menu"
+			( )Parent=1
+			( )Child=1
+			[ ]MenuItem "New"
+				( )Tag=0
+				( )Class="MenuItem"
+				( )Parent=0
+				( )Child=1
+			[ ]MenuItem "New"
+				( )Tag=1
+				( )Class="MenuItem"
+				( )Parent=0
+				( )Child=1
+			[ ]MenuItem "New"
+				( )Tag=2
+				( )Class="MenuItem"
+				( )Parent=0
+				( )Child=1
+			[ ]MenuItem "_Delete"
+				( )Tag=3
+				( )Class="MenuItem"
+				( )Parent=0
+				( )Child=1
+			[ ]MenuItem ""
+				( )Tag=4
+				( )Class="MenuItem"
+				( )Parent=0
+				( )Child=1
+			[ ]MenuItem "_Compute"
+				( )Tag=5
+				( )Class="MenuItem"
+				( )Parent=0
+				( )Child=1
+		[ ]Menu "_Text"
+			( )Tag=4
+			( )Class="Menu"
+			( )Parent=1
+			( )Child=1
+			[ ]MenuItem "Show"
+				( )Tag=0
+				( )Class="MenuItem"
+				( )Parent=0
+				( )Child=1
+			[ ]MenuItem "Text"
+				( )Tag=1
+				( )Class="MenuItem"
+				( )Parent=0
+				( )Child=1
+			[ ]MenuItem "New"
+				( )Tag=2
+				( )Class="MenuItem"
+				( )Parent=0
+				( )Child=1
+			[ ]MenuItem ""
+				( )Tag=3
+				( )Class="MenuItem"
+				( )Parent=0
+				( )Child=1
+			[ ]MenuItem "_Previous"
+				( )Tag=4
+				( )Class="MenuItem"
+				( )Parent=0
+				( )Child=1
+			[ ]MenuItem "_Next"
+				( )Tag=5
+				( )Class="MenuItem"
+				( )Parent=0
+				( )Child=1
+			[ ]MenuItem ""
+				( )Tag=6
+				( )Class="MenuItem"
+				( )Parent=0
+				( )Child=1
+			[ ]MenuItem "_Edit"
+				( )Tag=7
+				( )Class="MenuItem"
+				( )Parent=0
+				( )Child=1
+			[ ]MenuItem "_Delete"
+				( )Tag=8
+				( )Class="MenuItem"
+				( )Parent=0
+				( )Child=1
+			[ ]MenuItem "Delete"
+				( )Tag=9
+				( )Class="MenuItem"
+				( )Parent=0
+				( )Child=1
+			[ ]MenuItem ""
+				( )Tag=10
+				( )Class="MenuItem"
+				( )Parent=0
+				( )Child=1
+			[ ]MenuItem "E_xport"
+				( )Tag=11
+				( )Class="MenuItem"
+				( )Parent=0
+				( )Child=1
+		[ ]Menu "Piano_Roll"
+			( )Tag=5
+			( )Class="Menu"
+			( )Parent=1
+			( )Child=1
+			[ ]MenuItem "_Show"
+				( )Tag=0
+				( )Class="MenuItem"
+				( )Parent=0
+				( )Child=1
+			[ ]MenuItem "Include"
+				( )Tag=1
+				( )Class="MenuItem"
+				( )Parent=0
+				( )Child=1
+			[ ]MenuItem ""
+				( )Tag=2
+				( )Class="MenuItem"
+				( )Parent=0
+				( )Child=1
+			[ ]MenuItem "_Increase"
+				( )Tag=3
+				( )Class="MenuItem"
+				( )Parent=0
+				( )Child=1
+			[ ]MenuItem "_Decrease"
+				( )Tag=4
+				( )Class="MenuItem"
+				( )Parent=0
+				( )Child=1
+		[ ]Menu "_Window"
+			( )Tag=6
+			( )Class="Menu"
+			( )Parent=1
+			( )Child=1
+			[ ]MenuItem "Audio"
+				( )Tag=0
+				( )Class="MenuItem"
+				( )Parent=0
+				( )Child=1
+			[ ]MenuItem "Audio"
+				( )Tag=1
+				( )Class="MenuItem"
+				( )Parent=0
+				( )Child=1
+			[ ]MenuItem "_Sound"
+				( )Tag=2
+				( )Class="MenuItem"
+				( )Parent=0
+				( )Child=1
+			[ ]MenuItem "_Bring"
+				( )Tag=3
+				( )Class="MenuItem"
+				( )Parent=0
+				( )Child=1
+			[ ]MenuItem "Close"
+				( )Tag=4
+				( )Class="MenuItem"
+				( )Parent=0
+				( )Child=1
+			[ ]MenuItem ""
+				( )Tag=5
+				( )Class="MenuItem"
+				( )Parent=0
+				( )Child=1
+			[ ]MenuItem "_Previous"
+				( )Tag=6
+				( )Class="MenuItem"
+				( )Parent=0
+				( )Child=1
+			[ ]MenuItem "_Next"
+				( )Tag=7
+				( )Class="MenuItem"
+				( )Parent=0
+				( )Child=1
+			[ ]MenuItem ""
+				( )Tag=8
+				( )Class="MenuItem"
+				( )Parent=0
+				( )Child=1
+			[ ]MenuItem "_empty_"
+				( )Tag=9
+				( )Class="MenuItem"
+				( )Parent=0
+				( )Child=1
+		[ ]Menu "_Help"
+			( )Tag=7
+			( )Class="Menu"
+			( )Parent=1
+			( )Child=1
+			[ ]MenuItem "Transcribe_"
+				( )Tag=0
+				( )Class="MenuItem"
+				( )Parent=0
+				( )Child=1
+			[ ]MenuItem "_FAQ"
+				( )Tag=1
+				( )Class="MenuItem"
+				( )Parent=0
+				( )Child=1
+			[ ]MenuItem ""
+				( )Tag=2
+				( )Class="MenuItem"
+				( )Parent=0
+				( )Child=1
+			[ ]MenuItem "_System"
+				( )Tag=3
+				( )Class="MenuItem"
+				( )Parent=0
+				( )Child=1
+			[ ]MenuItem "_License"
+				( )Tag=4
+				( )Class="MenuItem"
+				( )Parent=0
+				( )Child=1
+			[ ]MenuItem "_About"
+				( )Tag=5
+				( )Class="MenuItem"
+				( )Parent=0
+				( )Child=1
+	[ ]MainWin "panel"
+		( )Tag="panel"
+		( )Class="wxWindowClassNR"
+		( )Parent=1
+		( )Child=1
+		[ ]MainWin "panel"
+			( )Tag="panel"
+			( )Class="wxWindowClassNR"
+			( )Parent=1
+			( )Child=1
+			[ ]MainWin "panel"
+				( )Tag="panel"
+				( )Class="wxWindowClassNR"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "panel"
+				( )Tag="panel"
+				( )Class="wxWindowClassNR"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "panel"
+				( )Tag="panel"
+				( )Class="wxWindowClassNR"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "panel"
+				( )Tag="panel"
+				( )Class="wxWindowClassNR"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "panel"
+				( )Tag="panel"
+				( )Class="wxWindowClassNR"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "panel"
+				( )Tag="panel"
+				( )Class="wxWindowClassNR"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "panel"
+				( )Tag="panel"
+				( )Class="wxWindowClassNR"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "panel"
+				( )Tag="panel"
+				( )Class="wxWindowClassNR"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "panel"
+				( )Tag="panel"
+				( )Class="wxWindowClassNR"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "panel"
+				( )Tag="panel"
+				( )Class="wxWindowClassNR"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "panel"
+				( )Tag="panel"
+				( )Class="wxWindowClassNR"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "panel"
+				( )Tag="panel"
+				( )Class="wxWindowClassNR"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "panel"
+				( )Tag="panel"
+				( )Class="wxWindowClassNR"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "panel"
+				( )Tag="panel"
+				( )Class="wxWindowClassNR"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "panel"
+				( )Tag="panel"
+				( )Class="wxWindowClassNR"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "panel"
+				( )Tag="panel"
+				( )Class="wxWindowClassNR"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "panel"
+				( )Tag="panel"
+				( )Class="wxWindowClassNR"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "panel"
+				( )Tag="panel"
+				( )Class="wxWindowClassNR"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "panel"
+				( )Tag="panel"
+				( )Class="wxWindowClassNR"
+				( )Parent=0
+				( )Child=1
+		[ ]MainWin "panel"
+			( )Tag="panel"
+			( )Class="wxWindowClassNR"
+			( )Parent=1
+			( )Child=1
+			[ ]MainWin "panel"
+				( )Tag="panel"
+				( )Class="wxWindowClassNR"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "panel"
+				( )Tag="panel"
+				( )Class="wxWindowClassNR"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "panel"
+				( )Tag="panel"
+				( )Class="wxWindowClassNR"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "panel"
+				( )Tag="panel"
+				( )Class="wxWindowClassNR"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "panel"
+				( )Tag="panel"
+				( )Class="wxWindowClassNR"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "panel"
+				( )Tag="panel"
+				( )Class="wxWindowClassNR"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "panel"
+				( )Tag="panel"
+				( )Class="wxWindowClassNR"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "panel"
+				( )Tag="panel"
+				( )Class="wxWindowClassNR"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "panel"
+				( )Tag="panel"
+				( )Class="wxWindowClassNR"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "panel"
+				( )Tag="panel"
+				( )Class="wxWindowClassNR"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "panel"
+				( )Tag="panel"
+				( )Class="wxWindowClassNR"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "panel"
+				( )Tag="panel"
+				( )Class="wxWindowClassNR"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "panel"
+				( )Tag="panel"
+				( )Class="wxWindowClassNR"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "panel"
+				( )Tag="panel"
+				( )Class="wxWindowClassNR"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "panel"
+				( )Tag="panel"
+				( )Class="wxWindowClassNR"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "panel"
+				( )Tag="panel"
+				( )Class="wxWindowClassNR"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "panel"
+				( )Tag="panel"
+				( )Class="wxWindowClassNR"
+				( )Parent=0
+				( )Child=1
+		[ ]MainWin "panel"
+			( )Tag="panel"
+			( )Class="wxWindowClass"
+			( )Parent=0
+			( )Child=1
+		[ ]MainWin "This"
+			( )Tag="This window is currently empty.*"
+			( )Class="Static"
+			( )Parent=0
+			( )Child=1

@@ -1,0 +1,1187 @@
+
+
+[ ]MainWin "Audio"
+	( )Tag="Audio Effects and Controls*"
+	( )Class="#32770"
+	( )Parent=1
+	( )Child=0
+	[ ]MainWin "_wx_SysTabCtl321"
+		( )Tag=1
+		( )Class="_wx_SysTabCtl32"
+		( )Parent=1
+		( )Child=1
+		[ ]MainWin "panel"
+			( )Tag="panel"
+			( )Class="wxWindowClassNR"
+			( )Parent=1
+			( )Child=1
+			[ ]Menu 
+				( )Tag=""
+				( )Class="Menu"
+				( )Parent=0
+				( )Child=1
+				[ ]MenuItem "OEM"
+					( )Tag=0
+					( )Class="MenuItem"
+					( )Parent=0
+					( )Child=1
+				[ ]MenuItem "OEM"
+					( )Tag=1
+					( )Class="MenuItem"
+					( )Parent=0
+					( )Child=1
+			[ ]MainWin "Apply"
+				( )Tag="Apply to all views of this transcription"
+				( )Class="Button"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "Active"
+				( )Tag="Active"
+				( )Class="Button"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "Bypass"
+				( )Tag="Bypass"
+				( )Class="Button"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "Clear"
+				( )Tag="Clear"
+				( )Class="Button"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "Help___"
+				( )Tag="Help..."
+				( )Class="Button"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "Static1"
+				( )Tag=1
+				( )Class="Static"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "Mono"
+				( )Tag="Mono"
+				( )Class="Button"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "Karaoke"
+				( )Tag="Karaoke"
+				( )Class="Button"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "Left"
+				( )Tag="Left"
+				( )Class="Button"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "Right"
+				( )Tag="Right"
+				( )Class="Button"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "Mix"
+				( )Tag="Mix Proportions"
+				( )Class="Button"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "Out"
+				( )Tag="Out of phase"
+				( )Class="Button"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "Left"
+				( )Tag="Left"
+				( )Class="Static"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "100_"
+				( )Tag="100%"
+				( )Class="Static"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "Right"
+				( )Tag="Right"
+				( )Class="Static"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "100_"
+				( )Tag="100%"
+				( )Class="Static"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "msctls_trackbar321"
+				( )Tag=1
+				( )Class="msctls_trackbar32"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "panel"
+				( )Tag="panel"
+				( )Class="wxWindowClassNR"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "_Select"
+				( )Tag="(Select "Bypass" if you want to listen in normal stereo)"
+				( )Class="Static"
+				( )Parent=0
+				( )Child=1
+		[ ]MainWin "panel"
+			( )Tag="panel"
+			( )Class="wxWindowClassNR"
+			( )Parent=1
+			( )Child=1
+			[ ]MainWin "Apply"
+				( )Tag="Apply to all views of this transcription"
+				( )Class="Button"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "Active"
+				( )Tag="Active"
+				( )Class="Button"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "Bypass"
+				( )Tag="Bypass"
+				( )Class="Button"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "Clear"
+				( )Tag="Clear"
+				( )Class="Button"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "Help___"
+				( )Tag="Help..."
+				( )Class="Button"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "Static1"
+				( )Tag=1
+				( )Class="Static"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "Button6"
+				( )Tag=6
+				( )Class="Button"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "panel"
+				( )Tag="panel"
+				( )Class="wxWindowClassNR"
+				( )Parent=1
+				( )Child=1
+				[ ]MainWin "panel"
+					( )Tag="panel"
+					( )Class="wxWindowClassNR"
+					( )Parent=0
+					( )Child=1
+				[ ]MainWin "panel"
+					( )Tag="panel"
+					( )Class="wxWindowClassNR"
+					( )Parent=0
+					( )Child=1
+				[ ]MainWin "panel"
+					( )Tag="panel"
+					( )Class="wxWindowClassNR"
+					( )Parent=0
+					( )Child=1
+				[ ]MainWin "panel"
+					( )Tag="panel"
+					( )Class="wxWindowClassNR"
+					( )Parent=0
+					( )Child=1
+				[ ]MainWin "panel"
+					( )Tag="panel"
+					( )Class="wxWindowClassNR"
+					( )Parent=0
+					( )Child=1
+				[ ]MainWin "panel"
+					( )Tag="panel"
+					( )Class="wxWindowClassNR"
+					( )Parent=0
+					( )Child=1
+				[ ]MainWin "panel"
+					( )Tag="panel"
+					( )Class="wxWindowClassNR"
+					( )Parent=0
+					( )Child=1
+				[ ]MainWin "panel"
+					( )Tag="panel"
+					( )Class="wxWindowClassNR"
+					( )Parent=0
+					( )Child=1
+				[ ]MainWin "panel"
+					( )Tag="panel"
+					( )Class="wxWindowClassNR"
+					( )Parent=0
+					( )Child=1
+				[ ]MainWin "panel"
+					( )Tag="panel"
+					( )Class="wxWindowClassNR"
+					( )Parent=0
+					( )Child=1
+				[ ]MainWin "panel"
+					( )Tag="panel"
+					( )Class="wxWindowClassNR"
+					( )Parent=0
+					( )Child=1
+				[ ]MainWin "panel"
+					( )Tag="panel"
+					( )Class="wxWindowClassNR"
+					( )Parent=0
+					( )Child=1
+				[ ]MainWin "panel"
+					( )Tag="panel"
+					( )Class="wxWindowClassNR"
+					( )Parent=0
+					( )Child=1
+				[ ]MainWin "panel"
+					( )Tag="panel"
+					( )Class="wxWindowClassNR"
+					( )Parent=0
+					( )Child=1
+				[ ]MainWin "panel"
+					( )Tag="panel"
+					( )Class="wxWindowClassNR"
+					( )Parent=0
+					( )Child=1
+				[ ]MainWin "panel"
+					( )Tag="panel"
+					( )Class="wxWindowClassNR"
+					( )Parent=0
+					( )Child=1
+				[ ]MainWin "panel"
+					( )Tag="panel"
+					( )Class="wxWindowClassNR"
+					( )Parent=0
+					( )Child=1
+				[ ]MainWin "panel"
+					( )Tag="panel"
+					( )Class="wxWindowClassNR"
+					( )Parent=0
+					( )Child=1
+				[ ]MainWin "panel"
+					( )Tag="panel"
+					( )Class="wxWindowClassNR"
+					( )Parent=0
+					( )Child=1
+				[ ]MainWin "panel"
+					( )Tag="panel"
+					( )Class="wxWindowClassNR"
+					( )Parent=0
+					( )Child=1
+				[ ]MainWin "panel"
+					( )Tag="panel"
+					( )Class="wxWindowClassNR"
+					( )Parent=0
+					( )Child=1
+				[ ]MainWin "panel"
+					( )Tag="panel"
+					( )Class="wxWindowClassNR"
+					( )Parent=0
+					( )Child=1
+				[ ]MainWin "panel"
+					( )Tag="panel"
+					( )Class="wxWindowClassNR"
+					( )Parent=0
+					( )Child=1
+				[ ]MainWin "panel"
+					( )Tag="panel"
+					( )Class="wxWindowClassNR"
+					( )Parent=0
+					( )Child=1
+				[ ]MainWin "panel"
+					( )Tag="panel"
+					( )Class="wxWindowClassNR"
+					( )Parent=0
+					( )Child=1
+				[ ]MainWin "panel"
+					( )Tag="panel"
+					( )Class="wxWindowClassNR"
+					( )Parent=0
+					( )Child=1
+				[ ]MainWin "panel"
+					( )Tag="panel"
+					( )Class="wxWindowClassNR"
+					( )Parent=0
+					( )Child=1
+				[ ]MainWin "panel"
+					( )Tag="panel"
+					( )Class="wxWindowClassNR"
+					( )Parent=0
+					( )Child=1
+				[ ]MainWin "panel"
+					( )Tag="panel"
+					( )Class="wxWindowClassNR"
+					( )Parent=0
+					( )Child=1
+				[ ]MainWin "panel"
+					( )Tag="panel"
+					( )Class="wxWindowClassNR"
+					( )Parent=0
+					( )Child=1
+				[ ]MainWin "panel"
+					( )Tag="panel"
+					( )Class="wxWindowClassNR"
+					( )Parent=0
+					( )Child=1
+				[ ]MainWin "panel"
+					( )Tag="panel"
+					( )Class="wxWindowClassNR"
+					( )Parent=0
+					( )Child=1
+			[ ]MainWin "Presets"
+				( )Tag="Presets"
+				( )Class="Button"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "ListBox1"
+				( )Tag=1
+				( )Class="ListBox"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "Load"
+				( )Tag="Load"
+				( )Class="Button"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "Save___"
+				( )Tag="Save..."
+				( )Class="Button"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "Save"
+				( )Tag="Save As..."
+				( )Class="Button"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "Delete___"
+				( )Tag="Delete..."
+				( )Class="Button"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "Defaults"
+				( )Tag="Defaults"
+				( )Class="Button"
+				( )Parent=0
+				( )Child=1
+		[ ]MainWin "panel"
+			( )Tag="panel"
+			( )Class="wxWindowClassNR"
+			( )Parent=1
+			( )Child=1
+			[ ]MainWin "Apply"
+				( )Tag="Apply to all views of this transcription"
+				( )Class="Button"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "Active"
+				( )Tag="Active"
+				( )Class="Button"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "Bypass"
+				( )Tag="Bypass"
+				( )Class="Button"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "Clear"
+				( )Tag="Clear"
+				( )Class="Button"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "Help___"
+				( )Tag="Help..."
+				( )Class="Button"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "Static1"
+				( )Tag=1
+				( )Class="Static"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "Tuning"
+				( )Tag="Tuning"
+				( )Class="Button"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "Octaves"
+				( )Tag="Octaves"
+				( )Class="Static"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "msctls_trackbar321"
+				( )Tag=1
+				( )Class="msctls_trackbar32"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "panel"
+				( )Tag="panel"
+				( )Class="wxWindowClassNR"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "0"
+				( )Tag="0"
+				( )Class="Static"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "Semitones"
+				( )Tag="Semitones"
+				( )Class="Static"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "msctls_trackbar322"
+				( )Tag=2
+				( )Class="msctls_trackbar32"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "panel"
+				( )Tag="panel"
+				( )Class="wxWindowClassNR"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "0"
+				( )Tag="0"
+				( )Class="Static"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "Cents"
+				( )Tag="Cents"
+				( )Class="Static"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "msctls_trackbar323"
+				( )Tag=3
+				( )Class="msctls_trackbar32"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "panel"
+				( )Tag="panel"
+				( )Class="wxWindowClassNR"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "0"
+				( )Tag="0"
+				( )Class="Static"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "Analog"
+				( )Tag="Analog lock"
+				( )Class="Button"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "Reference"
+				( )Tag="Reference note"
+				( )Class="Button"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "Static8"
+				( )Tag=8
+				( )Class="Static"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "Pitch"
+				( )Tag="Pitch"
+				( )Class="Static"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "msctls_trackbar324"
+				( )Tag=4
+				( )Class="msctls_trackbar32"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "panel"
+				( )Tag="panel"
+				( )Class="wxWindowClassNR"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "C"
+				( )Tag="C"
+				( )Class="Static"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "Volume"
+				( )Tag="Volume"
+				( )Class="Static"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "msctls_trackbar325"
+				( )Tag=5
+				( )Class="msctls_trackbar32"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "panel"
+				( )Tag="panel"
+				( )Class="wxWindowClassNR"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "50"
+				( )Tag="50"
+				( )Class="Static"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "Play"
+				( )Tag="Play note"
+				( )Class="Button"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "Timbre"
+				( )Tag="Timbre"
+				( )Class="Button"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "Shape"
+				( )Tag="Shape"
+				( )Class="Button"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "Triangle"
+				( )Tag="Triangle wave"
+				( )Class="Button"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "Square"
+				( )Tag="Square wave"
+				( )Class="Button"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "Button14"
+				( )Tag=14
+				( )Class="Button"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "msctls_trackbar326"
+				( )Tag=6
+				( )Class="msctls_trackbar32"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "panel"
+				( )Tag="panel"
+				( )Class="wxWindowClassNR"
+				( )Parent=0
+				( )Child=1
+		[ ]MainWin "panel"
+			( )Tag="panel"
+			( )Class="wxWindowClassNR"
+			( )Parent=1
+			( )Child=1
+			[ ]Menu 
+				( )Tag=""
+				( )Class="Menu"
+				( )Parent=0
+				( )Child=1
+				[ ]MenuItem "TIS_620"
+					( )Tag=0
+					( )Class="MenuItem"
+					( )Parent=0
+					( )Child=1
+			[ ]MainWin "Apply"
+				( )Tag="Apply to all views of this transcription"
+				( )Class="Button"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "Active"
+				( )Tag="Active"
+				( )Class="Button"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "Bypass"
+				( )Tag="Bypass"
+				( )Class="Button"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "Clear"
+				( )Tag="Clear"
+				( )Class="Button"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "Help___"
+				( )Tag="Help..."
+				( )Class="Button"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "Static1"
+				( )Tag=1
+				( )Class="Static"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "Presets"
+				( )Tag="Presets"
+				( )Class="Button"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "Button7"
+				( )Tag=7
+				( )Class="Button"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "Button8"
+				( )Tag=8
+				( )Class="Button"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "Button9"
+				( )Tag=9
+				( )Class="Button"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "Button10"
+				( )Tag=10
+				( )Class="Button"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "Button11"
+				( )Tag=11
+				( )Class="Button"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "Button12"
+				( )Tag=12
+				( )Class="Button"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "Button13"
+				( )Tag=13
+				( )Class="Button"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "Octaves"
+				( )Tag="Octaves"
+				( )Class="Static"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "msctls_trackbar321"
+				( )Tag=1
+				( )Class="msctls_trackbar32"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "panel"
+				( )Tag="panel"
+				( )Class="wxWindowClassNR"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "0"
+				( )Tag="0"
+				( )Class="Static"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "Semitones"
+				( )Tag="Semitones"
+				( )Class="Static"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "msctls_trackbar322"
+				( )Tag=2
+				( )Class="msctls_trackbar32"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "panel"
+				( )Tag="panel"
+				( )Class="wxWindowClassNR"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "C"
+				( )Tag="C"
+				( )Class="Static"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "Cents"
+				( )Tag="Cents"
+				( )Class="Static"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "msctls_trackbar323"
+				( )Tag=3
+				( )Class="msctls_trackbar32"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "panel"
+				( )Tag="panel"
+				( )Class="wxWindowClassNR"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "0"
+				( )Tag="0"
+				( )Class="Static"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "Note_"
+				( )Tag="Note: this page*"
+				( )Class="Static"
+				( )Parent=0
+				( )Child=1
+		[ ]MainWin "panel"
+			( )Tag="panel"
+			( )Class="wxWindowClassNR"
+			( )Parent=1
+			( )Child=1
+			[ ]Menu 
+				( )Tag=""
+				( )Class="Menu"
+				( )Parent=0
+				( )Child=1
+				[ ]MenuItem "ISO"
+					( )Tag=0
+					( )Class="MenuItem"
+					( )Parent=0
+					( )Child=1
+				[ ]MenuItem "ISO"
+					( )Tag=1
+					( )Class="MenuItem"
+					( )Parent=0
+					( )Child=1
+				[ ]MenuItem "OEM"
+					( )Tag=2
+					( )Class="MenuItem"
+					( )Parent=0
+					( )Child=1
+				[ ]MenuItem "Windows_1254"
+					( )Tag=3
+					( )Class="MenuItem"
+					( )Parent=0
+					( )Child=1
+			[ ]MainWin "Apply"
+				( )Tag="Apply to all views of this transcription"
+				( )Class="Button"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "Active"
+				( )Tag="Active"
+				( )Class="Button"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "Bypass"
+				( )Tag="Bypass"
+				( )Class="Button"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "Clear"
+				( )Tag="Clear"
+				( )Class="Button"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "Help___"
+				( )Tag="Help..."
+				( )Class="Button"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "Static1"
+				( )Tag=1
+				( )Class="Static"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "15_"
+				( )Tag="15%"
+				( )Class="Button"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "25_"
+				( )Tag="25%"
+				( )Class="Button"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "35_"
+				( )Tag="35%"
+				( )Class="Button"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "50_"
+				( )Tag="50%"
+				( )Class="Button"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "70_"
+				( )Tag="70%"
+				( )Class="Button"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "100_"
+				( )Tag="100%"
+				( )Class="Button"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "150_"
+				( )Tag="150%"
+				( )Class="Button"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "Edit1"
+				( )Tag=1
+				( )Class="Edit"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "_"
+				( )Tag="%"
+				( )Class="Static"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "msctls_trackbar321"
+				( )Tag=1
+				( )Class="msctls_trackbar32"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "panel"
+				( )Tag="panel"
+				( )Class="wxWindowClassNR"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "Analog"
+				( )Tag="Analog lock"
+				( )Class="Button"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "Original"
+				( )Tag="Original speed (bpm):"
+				( )Class="Static"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "Static4"
+				( )Tag=4
+				( )Class="Static"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "Altered"
+				( )Tag="Altered speed (bpm):"
+				( )Class="Static"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "Static6"
+				( )Tag=6
+				( )Class="Static"
+				( )Parent=0
+				( )Child=1
+		[ ]MainWin "panel"
+			( )Tag="panel"
+			( )Class="wxWindowClassNR"
+			( )Parent=1
+			( )Child=1
+			[ ]MainWin "Apply"
+				( )Tag="Apply to all views of this transcription"
+				( )Class="Button"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "Active"
+				( )Tag="Active"
+				( )Class="Button"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "Bypass"
+				( )Tag="Bypass"
+				( )Class="Button"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "Clear"
+				( )Tag="Clear"
+				( )Class="Button"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "Help___"
+				( )Tag="Help..."
+				( )Class="Button"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "Static1"
+				( )Tag=1
+				( )Class="Static"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "At_"
+				( )Tag="At:"
+				( )Class="Static"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "Edit1"
+				( )Tag=1
+				( )Class="Edit"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "Selected_"
+				( )Tag="Selected:"
+				( )Class="Static"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "Edit2"
+				( )Tag=2
+				( )Class="Edit"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "Loops_"
+				( )Tag="Loops. Shift-click to store, click to recall"
+				( )Class="Button"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "panel"
+				( )Tag="panel"
+				( )Class="wxWindowClassNR"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "panel"
+				( )Tag="panel"
+				( )Class="wxWindowClassNR"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "panel"
+				( )Tag="panel"
+				( )Class="wxWindowClassNR"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "panel"
+				( )Tag="panel"
+				( )Class="wxWindowClassNR"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "panel"
+				( )Tag="panel"
+				( )Class="wxWindowClassNR"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "panel"
+				( )Tag="panel"
+				( )Class="wxWindowClassNR"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "panel"
+				( )Tag="panel"
+				( )Class="wxWindowClassNR"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "panel"
+				( )Tag="panel"
+				( )Class="wxWindowClassNR"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "panel"
+				( )Tag="panel"
+				( )Class="wxWindowClassNR"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "panel"
+				( )Tag="panel"
+				( )Class="wxWindowClassNR"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "panel"
+				( )Tag="panel"
+				( )Class="wxWindowClassNR"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "panel"
+				( )Tag="panel"
+				( )Class="wxWindowClassNR"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "panel"
+				( )Tag="panel"
+				( )Class="wxWindowClassNR"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "panel"
+				( )Tag="panel"
+				( )Class="wxWindowClassNR"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "panel"
+				( )Tag="panel"
+				( )Class="wxWindowClassNR"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "panel"
+				( )Tag="panel"
+				( )Class="wxWindowClassNR"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "panel"
+				( )Tag="panel"
+				( )Class="wxWindowClassNR"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "panel"
+				( )Tag="panel"
+				( )Class="wxWindowClassNR"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "panel"
+				( )Tag="panel"
+				( )Class="wxWindowClassNR"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "panel"
+				( )Tag="panel"
+				( )Class="wxWindowClassNR"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "panel"
+				( )Tag="panel"
+				( )Class="wxWindowClassNR"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "ScrollBar1"
+				( )Tag=1
+				( )Class="ScrollBar"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "Move"
+				( )Tag="Move"
+				( )Class="Button"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "_"
+				( )Tag="<"
+				( )Class="Button"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "End"
+				( )Tag="End"
+				( )Class="Static"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "_"
+				( )Tag=">"
+				( )Class="Button"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "_"
+				( )Tag="<"
+				( )Class="Button"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "Section"
+				( )Tag="Section"
+				( )Class="Static"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "_"
+				( )Tag=">"
+				( )Class="Button"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "_"
+				( )Tag="<"
+				( )Class="Button"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "Measure"
+				( )Tag="Measure"
+				( )Class="Static"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "_"
+				( )Tag=">"
+				( )Class="Button"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "_"
+				( )Tag="<"
+				( )Class="Button"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "Beat"
+				( )Tag="Beat"
+				( )Class="Static"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "_"
+				( )Tag=">"
+				( )Class="Button"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "_"
+				( )Tag="<"
+				( )Class="Button"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "1"
+				( )Tag="1 sec"
+				( )Class="Static"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "_"
+				( )Tag=">"
+				( )Class="Button"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "_"
+				( )Tag="<"
+				( )Class="Button"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "0_1"
+				( )Tag="0.1 sec"
+				( )Class="Static"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "_"
+				( )Tag=">"
+				( )Class="Button"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "_"
+				( )Tag="<"
+				( )Class="Button"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "0_01"
+				( )Tag="0.01 sec"
+				( )Class="Static"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "_"
+				( )Tag=">"
+				( )Class="Button"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "_"
+				( )Tag="<"
+				( )Class="Button"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "10"
+				( )Tag="10 pix"
+				( )Class="Static"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "_"
+				( )Tag=">"
+				( )Class="Button"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "_"
+				( )Tag="<"
+				( )Class="Button"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "1"
+				( )Tag="1 pix"
+				( )Class="Static"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "_"
+				( )Tag=">"
+				( )Class="Button"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "Volume"
+				( )Tag="Volume"
+				( )Class="Button"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "msctls_trackbar321"
+				( )Tag=1
+				( )Class="msctls_trackbar32"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "panel"
+				( )Tag="panel"
+				( )Class="wxWindowClassNR"
+				( )Parent=0
+				( )Child=1
+			[ ]MainWin "50"
+				( )Tag="50"
+				( )Class="Static"
+				( )Parent=0
+				( )Child=1
+		[ ]MainWin "msctls_updown321"
+			( )Tag=1
+			( )Class="msctls_updown32"
+			( )Parent=0
+			( )Child=1
