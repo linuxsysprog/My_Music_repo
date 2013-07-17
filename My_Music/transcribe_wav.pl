@@ -16,8 +16,6 @@ if ($ARGV[1] eq 'gui') {
 my $phantom = "C:\\Program Files\\Phantom\\Phantom.exe";
 my $phantom_script = "D:\\Aussie\\My_Music\\Phantom_scripts\\Transcribe.psc";
 
-my @percentages = qw/105 90 75 50 25/;
-
 Common::find(\&wanted, $dir, '\.wav$');
 Common::pause;
 
@@ -25,7 +23,7 @@ sub wanted {
 	my $file = shift;
 	$file =~ s/\.wav$//;
 	
-	foreach my $percentage (@percentages) {
+	foreach my $percentage (@Common::percentages) {
 		my $script_args = "string filename = \\\"$dir\\$file\\\"; string rate = \\\"$percentage\\\"; ";
 		
 		my $cmd = "\"$phantom\" $phantom_script $script_args > Phantom.log 2>&1";
