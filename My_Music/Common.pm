@@ -6,6 +6,9 @@ Part of My_Music/*.pl Perl scripts.
 
 package Common;
 
+$vdub_config = "test.jobs";
+$avis_config = "myclip.avs";
+
 sub pause {
 	print "Press Enter to continue . . . ";
 	<STDIN>;
@@ -62,6 +65,20 @@ sub create_config_file {
 	print $fh $contents;
 	
 	close $fh;
+}
+
+sub get_vdub_contents {
+	my $dir = shift;
+	my $file = shift;
+	my $ext = shift;
+
+	my $trimmed_dir = $dir;
+	$trimmed_dir =~ s/\\/\\\\/g;
+
+	return <<END;
+VirtualDub.Open("$trimmed_dir\\\\$avis_config");
+VirtualDub.SaveAVI("$trimmed_dir\\\\$file$ext");
+END
 }
 
 1;

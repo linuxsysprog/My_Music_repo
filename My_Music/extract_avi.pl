@@ -13,9 +13,6 @@ if ($ARGV[1] eq 'gui') {
 	$dir = $ARGV[0];
 }
 
-my $avis_config = "$dir/myclip.avs";
-my $vdub_config = "$dir/test.jobs";
-
 Common::find(\&wanted, $dir, '\.avi$');
 Common::pause;
 
@@ -28,22 +25,12 @@ AviSource("$dir/$file.avi")
 KillAudio
 END
 
-	my $trimmed_dir = $dir;
-	$trimmed_dir =~ s/\\/\\\\/g;
+	my $vdub_contents = Common::get_vdub_contents($dir, $file, '.vo.avi');
+	
+	Common::create_config_file("$dir/$Common::avis_config", $avis_contents);
+	Common::create_config_file("$dir/$Common::vdub_config", $vdub_contents);
 
-	my $trimmed_avis_config = $avis_config;
-	$trimmed_avis_config =~ s/\//\\/g;
-	$trimmed_avis_config =~ s/\\/\\\\/g;
-
-	my $vdub_contents= <<END;
-VirtualDub.Open("$trimmed_avis_config");
-VirtualDub.SaveAVI("$trimmed_dir\\\\$file.vo.avi");
-END
-
-	Common::create_config_file($avis_config, $avis_contents);
-	Common::create_config_file($vdub_config, $vdub_contents);
-
-	my $cmd = "vdub /s \"$vdub_config\"";
+	my $cmd = "vdub /s \"$dir/$Common::vdub_config\" > vdub.log 2>&1";
 	
 	`$cmd`;
 	if ($? != 0) {
