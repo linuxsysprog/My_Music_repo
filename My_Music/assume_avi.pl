@@ -26,6 +26,7 @@ sub wanted {
 		my $avis_contents = <<END;
 AviSource("$dir/$file.vo.avi")
 AssumeFPS($fps)
+ChangeFPS($Common::fps)
 END
 
 		my $vdub_contents = Common::get_vdub_contents($dir, $file, ".$percentage.vo.avi");
