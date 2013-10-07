@@ -9,7 +9,7 @@ package Common;
 $vdub_config = "test.jobs";
 $avis_config = "myclip.avs";
 $fps = 29.97;
-@percentages = qw/50 25 12.5 6.25/;
+@percentages = qw/25 6.25/;
 
 sub pause {
 	print "Press Enter to continue . . . ";
