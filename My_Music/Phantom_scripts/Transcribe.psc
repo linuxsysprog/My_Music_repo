@@ -33,7 +33,7 @@ Export.MouseClick(2, 300, 315, 0);
 Export.TypeKeys("a");
 Export.TypeKeys(filename + "." + rate + ".wav");
 Export.TypeKeys("<ENTER>");
-Sleep(15);
+Sleep(30);
 
 # close program
 Transcribe_.Close();
