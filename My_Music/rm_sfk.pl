@@ -33,6 +33,7 @@ pk
 scc
 sfk
 sfl
+peak
 /;
 
 # Reset counters
