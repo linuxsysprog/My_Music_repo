@@ -1,0 +1,699 @@
+$Id: SRS.txt 260 2016-05-17 09:03:51Z Andrey $
+Me vs. Guitar College Tabs
+
+Ex 2
+
+- I: no chord symbol
+- They: no tempo marking
+- 
+
+x draft a plan
+- configure
+	- put AutoCAD configs under version control
+		- move C:\Users\Andrey\AppData\Local\Autodesk\AutoCAD 2004\R16.0\enu\Template to
+			C:\Users\Andrey\AppData\Roaming\Autodesk\AutoCAD 2004\R16.0\enu
+		- Tools->Options...->Files->Drawing Template Settings->Drawing Template File Location:
+			C:\Users\Andrey\AppData\Roaming\Autodesk\AutoCAD 2004\R16.0\enu\Template
+		- create Windows Explorer favorite for enu
+	- Tools->Customize->Keyboard...->Format Menu->Layer: Ctrl+Shift+L
+	- define Ctrl+Shift+Q zoom previous
+	? create qselect alias
+	! create ZA alias
+	- syscodepage; Control Panel\Clock, Language, and Region\Region and language\Administrative
+		\Change system locale...\Russian (Russia)\Restart now
+x create a registry of notation elements, define all names
+Document
+Document Template
+Page layout
+	- create Page_layout Layout layer
+	Paper size: Letter (215.9 mm x 279.4 mm) 8.5x11
+	Page Margins (Non-mirror margins, Top/Bottom/Left/Right margin size TBD) <--
+		Top: 19.05 Bottom: 19.05 Left: 25.4 Right: 12.7
+		- create Page Margins Rectangle: Corner: 0,0 Length: 177.8 Width: 241.3
+		- create Printable area Rectangle 209.55 x 273.05 mm
+		- center rectangle
+	Punch holes (array of 3 holes, centers/radii TBD)
+		Raw numbers (mm) Pitch 104.25 Offset 29.5 d 2.925 D 37.125 R 18.5625 hole D 6.6
+		Adjusted numbers (mm) Pitch 104
+					Offset 29.5
+					d 3
+					R 18.5
+					hole D 6.35
+	Page Numbers
+		Position: Bottom of page
+		Alignment: Right
+		Format: "Page N of N"
+		Start at: 1
+	Title
+		Alignment: Center
+		Hight/Style TBD
+	Composer
+		Alignment: Right
+		Hight/Style TBD
+	Transcribed and engraved by (alike Composer)
+	Section Name (alike Title)
+	Tempo
+		Alignment: Left
+		Hight/Style TBD
+	Time Signature  (alike Tempo)
+	Legend (contents TBD)
+		Alignment: Top/Left
+	SVN block (alike Composer)
+		URL (SVN URL)
+		Revision (SVN revision number)
+		Last changed (SVN time stamp)
+Staff (=measure)
+	- variable pitch
+	Staff Lines (LWT TBD; constant pitch, TBD)
+	Barline (=beat) (5 pcs.; LWT TBD)
+		Double
+		Final
+		Forward Repeat
+		Backward Repeat
+		Repeat Times
+		Repeat Hatch
+		Alt Parenthesis
+	Measure Number (to the left of staff, bigger; sometimes "Alt")
+	Beat Number (top/left corner of beat, smaller)
+Note
+	Single/Chorded
+	Flagged
+	Beamed
+		(Tuplet Number)
+	Upstem
+	Downstem
+	Two-waystem
+	Pitched (String/Fret)/Non-pitched (=ghost note)
+	Paused (=rest)
+		see "Duration"
+	Parenthesized
+	Duration
+		Quarter
+		Eighth
+		Sixteenth
+		Thirty-Second
+		Sixty-Fourth
+		Tuplet (3 5 6 7 9 10 11 12)
+		Dot
+		Tie Line
+	Tuplet Bracket
+		Upstem
+		Downstem
+Articulations (=right hand)
+	Upbow
+	Downbow
+	Bow Bracket
+	Bow Parenthesized
+	Bow Alt
+	Staccato
+	Accent
+	Accent Parenthesized
+	Up Arpeggio
+	Down Arpeggio
+	Tap
+	Simile
+Fingering(=left hand)
+	Fingering Numbers (1 2 3 4)
+	Shift Line
+	Slide Line
+	Hammer-on Slur
+	Pull-off Slur
+	Combination Slur
+	LHTap
+	LHSimile
+	Pitch Bend Spline (=Vibrato and bends)
+	Floor Line
+	Ceiling Line
+	Floor Number (0 1/2 Full "1 1/2" 2)
+	Ceiling Number (same as above)
+	Spline Text (1234 () F w A sh ll) [Fingers wrist Arm Push Pull]
+- develop a set of ACAD templates
+	- write install.bat to install *.dwt, *.stb, *.pss, *.pc3 files
+	- setup Drawing, create a Template (Chapter 8)
+		File->New...->acadISO -Named Plot Styles.dwt
+		File->Save As...->Files of type: *.dwt->Finale.dwt->Template Description->
+			"Normal international (metric) drawing template. Uses Color Dependent Plot Styles. Finale Master Template."
+			Tools->Options...->Files->Drawing Template Settings->Drawing Template File Location:
+			C:\Users\Andrey\AppData\Local\Autodesk\AutoCAD 2004\R16.0\enu\Template (copy Finale.dwt to)
+			Update Finale.dwt master copy
+			A Template holds: Units, Limits, Layers, LTs, LWTs, Colors, (Dimension) Styles, etc.
+			Template structure design principles: 1 Layer set=1 Template
+				1 Limits=1 Template (multiple Paper size/multiple scales)
+				1 scale (Limits, Snap, Grid, Layers, LTSCALE, DIMSCALE, text Height)=1 Template (single Paper size) Finale.dwt
+				1 print scale/Paper size combination=1 Template (when printing a Model)
+		Format->Units...->Precision: 0.0
+		Model, Format->Drawing Limits->215.9,279.4
+			Format->Point Style...->X
+			Draw->Point->Single Point->0.0; 215.9,279.4
+			View->Zoom->All
+			View->Named Views...->New...->Zoom_All
+			<Drawing scale> = Limits/Paper size; Plot scale = 1/<Drawing scale>; <Drawing scale> = 1
+			if Limits/Paper size != 1/1 update all *SCALE variables
+			Limits dependents: LTSCALE, DIMSCALE, text Height, etc.
+		Tools->Drafting Settings...->Snap and Grid
+			Grid snap, PolarSnap spacing: take into account Limits, Precision; more dense, more precise, but less convenient
+				estimate for Snap spacing: 10*<Drawing scale>
+				estimate for Grid spacing: Grid spacing = Snap spacing
+			Snap On: uncheck (Grid snap, PolarSnap off)
+			Grid On: uncheck
+		Format->Linetype...->Global scale factor: (LTSCALE, SiD)
+			scale factor for interrupted lines; estimate: LTSCALE = <Drawing scale>
+		? Format->Dimension Style...(Dimension->Style...)->Primary Units->Scale factor: (DIMLFAC)
+		DIMSCALE, SiD
+			overall scale factor for dimensions; estimate: DIMSCALE = <Drawing scale>
+		Format->Text Style...->Height:
+			estimate: Height = <Drawing scale>*printHeight
+		Draw->Hatch...->Scale (HPSCALE, Ns)
+			hatch pattern scale factor; estimate: should be set in proportion to Limits
+	- create Layouts and Viewports (Chapter 9)
+		Model Viewports TBD
+		Layout: Plot Device, Paper size/orientation, New layout, New Viewport, Viewport scale, print at 100% scale
+		New layout size/form (Layout Limits) are set automatically by Plot Device, Paper size/orientation
+		Title blocks and notes are drawn in paper space
+			Tools->Options...->Display->Create viewport in new layouts: uncheck
+			Tools->Options...->Plotting
+				Use As Default Output Device: PrimoPDF
+				Keep the Layout Paper Size If Possible: check
+			Insert->Layout->New Layout
+			Layout2->Rename->Layout
+			Layout1->Delete
+			Layout, File->Page Setup... (SiD)
+				Plot Device: PrimoPDF
+				Layout Settings->Paper size: Letter
+				Layout Settings->Drawing orientation: Portrait
+				Layout Settings->Plot area: TBD
+				Layout Settings->Plot options: TBD
+				Layout Settings->Plot scale: 1:1
+				Display when creating a new layout: uncheck
+		Layout, Format->Drawing Limits-><-3.2,-3.2> <212.7,276.2>
+		Layout, Format->Layer...->New->VPORTS->Current
+		Layout, View->Viewports->New Viewport...->Single
+		PAPER, Viewport Properties->Standard scale->1:1
+		Viewport Properties->Display Locked->Yes
+		Layout, Format->Layer...->VPORTS->On: uncheck
+		---
+		Paper size Letter 215.9 mm x 279.4 mm
+		Printable area 209.55 x 273.05 mm
+		Model Limits <0.0,0.0> <215.9,279.4>
+		Layout Limits <-3.2,-3.2> <212.7,276.2>
+		Plot scale 1:1
+		Viewport scale 1:1
+		TBD redefine Model Limits and Viewport
+		---
+	- create a PDF printout (Chapter 10)
+		Plot (Model/Layout): Save, Plot..., Plot Device, Paper size/orientation, Plot area, Plot scale (Layout: 100%), Plot offset,
+			(Shaded viewport options, Plot options), Full Preview..., OK (SiD)
+		Plot styles/Plot style tables
+			Color, LT, LWT, etc. TBD
+			File->Plot Style Manager...->
+				->Add-A-Plot Style Table Wizard->Start from scratch->Named Plot Style Table->Finale.stb
+				C:\Users\Andrey\AppData\Roaming\Autodesk\AutoCAD 2004\R16.0\enu\Plot Styles (copy Finale.stb to)
+				Update Finale.stb master copy
+			Finale.stb->Plot Style Table Editor->Description: Finale Master Plot Style Table.
+				->Form View->Add Style->Beamed TBD
+					->Color: Black
+					->Linetype: Solid
+					->Lineweight: 0.5000 mm
+					->Line end style: Butt
+					->Line join style: Miter
+					->Fill style: Solid
+				->Save & Close
+			Tools->Options...->Plotting->Use named plot styles: check
+				->Default plot style table: None
+				->Default plot style for layer 0: Normal
+				->Default plot style for objects: ByLayer
+			Model, File->Page Setup...->Plot Device->Plot style table (pen assignments): Finale.stb
+				->"Assign this plot style table to all layouts?": Yes
+			Format->Layer...->New->Beamed, Plot Style->Beamed
+		File->Plotter Manager...->Add-A-Plotter Wizard->System Printer->PrimoPDF->Printer Name: PrimoPDF(AutoCAD)
+		PrimoPDF(AutoCAD).pc3->Plotter Configuration Editor->Description: PrimoPDF by Nitro PDF Software.
+		C:\Users\Andrey\AppData\Roaming\Autodesk\AutoCAD 2004\R16.0\enu\Plotters (copy PrimoPDF(AutoCAD).pc3 to)
+		Update PrimoPDF(AutoCAD).pc3 master copy
+			->Media Source and Size <Size: Letter>
+			->User-defined Paper Sizes & Calibration->Modify Standard Paper Sizes (Printable Area)->Letter:
+				Width: 8.50" Height: 11.00" LR: 0.12", 0.13" Printable Area: 8.25" x 10.75"
+				Width: 215.9 Height: 279.4 LR: 3.048, 3.302 Printable Area: 209.55 x 273.05
+		TBD adjust printable area
+		Layout, Format->Drawing Limits-><-3.2,-3.2> <212.7,276.2>
+		File->Plot...->Save changes to layout: uncheck
+			->Plot Device->PrimoPDF(AutoCAD)
+			->Plot Device->Plot style table (pen assignments): TBD
+			->Plot Device->What to plot: Current tab
+			->Plot Settings->Paper size: Letter
+			->Plot Settings->Printable area: mm
+			->Plot Settings->Drawing orientation: Portrait
+			->Plot Settings->Plot area: Layout
+			->Plot Settings->Plot scale: 1:1
+			->Plot Settings->Scale lineweights: check
+			->Plot Settings->Plot offset (origin for printers [Portrait]: Top/Left?): TBD
+			->Plot Settings->Center the plot: TBD
+			->Plot Settings->Plot options->Plot object lineweights: check
+			->Plot Settings->Plot options->Plot with plot styles: check
+			->Plot Settings->Plot options->Plot paperspace last: check
+			->Plot Settings->Plot options->Hide paperspace objects: uncheck
+			->Full Preview... (check plot styles; drawing looks different in Model/Layout)
+			->Partial Preview... (check Effective Area [blue], origin [red triangle])
+			->OK (SiD)
+		Page Setup vs. Plot
+			Layout Settings->Plot Settings and other small differences
+			setup page in "Page Setup" (Display plot styles: check, File->Plot Preview) then plot from Plot
+		?Plot stamp
+			File->Plot...->Plot Device->Plot stamp->on: check, Settings...
+				->Plot stamp fields->uncheck all
+					->Drawing name: check
+					->Date and Time: check
+				->Advanced
+					->Location: Bottom right
+					->Single line plot stamp: check
+			C:\Users\Andrey\AppData\Roaming\Autodesk\AutoCAD 2004\R16.0\enu\support\mm.pss (copy mm.pss to)
+			Update mm.pss master copy
+	- create a system of Layers (Chapter 7)
+		* Make Object's Layer Current/Layer Previous
+		* Object/Layer properties; Modify->Match Properties
+		* LWT (Show/Hide Lineweight)
+		* Two modes of operation: a) ByLayer b) set for new objects: Format->Color...;Linetype...;Lineweight...
+			On: objects are visible/editable/printable
+			Off: object are not visible/editable/printable, but Erase All
+			Freeze: like Off but not Erase All; needs Regen
+			Thaw: opposite to Freeze
+				Off & Thaw ok
+				On & Freeze: not visible
+			Lock: objects are visible/printable, but not editable; not Erase All
+				Off & Lock ok
+			Unlock: opposite to Lock
+			Plot: objects are not printable; Freeze or Off will do
+		Format->Layer...->New->Beamed
+			->Color->White
+			->Linetype->Continuous
+				?->Load...->File...: TBD design a custom *.lin file
+			->Lineweight: Default
+			->Plot Style->Beamed
+	- create a set of Blocks (Chapter 12)
+		* Block's Layer/Color/LT/LWT properties:
+			created in layer 0 -> when inserted properties are inherited from Current Layer
+			ByBlock -> when inserted properties are inherited from current properties
+			otherwise -> inserted into Block's objects' layers; properties are inherited from those of objects'
+		Draw->Block->Define Attributes...
+			->Attribute->Tag: Tuplet
+			->Attribute->Prompt: Enter Tuplet
+			->Attribute->Value: -1
+			->Text Options->Text Style: TBD
+			->Mode-> TBD
+			->Insertion Point->Pick Point
+			->OK
+		Modify->Object->Attribute->Single...->Enhanced Attribute Editor
+			->Select block
+			->Value: 5
+			->Apply
+		Draw->Block->Make...
+			->Name: Beamed
+			->Objects->Select objects
+			->Objects->Retain
+			->Base point->Pick point
+			->Preview icon: Create icon from block geometry
+			->Description: Beamed
+			->OK
+		?wblock->Write Block
+			->Source->Block: Beamed
+			->File name and path: D:\Aussie\My_Music\Yngwie Malmsteen - REH Video\Finale\Beamed (Beamed.dwg)
+		Insert->Block...
+			?->Browse... (C:\Users\Andrey\AppData\Roaming\Autodesk\AutoCAD 2004\R16.0\enu\support)
+			->Name: Beamed
+			->Insertion point->Specify On-screen: check
+			->Scale: 1:1:1
+			->Rotation: 0
+			->Explode: check
+			->OK
+		?redefine Block
+		?File->Drawing Utilities->Purge...
+		?Tools->DesignCenter
+			a) Insert Block... b) drag-and-drop content (Autoscaling)
+	- create a set of Text styles (Chapter 11)
+		* DTEXT/MTEXT (DT, T);  %%nnn ASCII;
+		Format->Text Style...->New...->Page Numbers
+			->Font Name: txt.shx (straight lines, no fill)
+			->Height: 2.5
+			->Effects->Width Factor: 1.0
+			->Apply
+		?redefine Text Style
+		?set current Text Style (also Text Style Control)
+		?Draw->Text->Multiline Text...->Import Text...: Import Text.txt; OK
+		Draw->Text->Single Line Text
+			Justify TBD
+			Style: Page Numbers
+		Draw->Text->Multiline Text...
+			* click ruler to make opaque; Symbol->Other...; Stack/Unstack (/#^), Stack Properties; Set Mtext Width...;
+				Line spacing/Rotation 
+		* Modify->Object->Text (DDEDIT/MTEDIT) or double-click; Grips; Properties
+		* qtext/regen; TEXTFILL (SiR); Modify->Object->Text->Justify
+	- create a set of Mline styles (Chapter 5.4)
+		Format->Multiline Style... (MLSTYLE)
+			->Add->Name: Staff_Lines, Description: Staff Lines
+			->Element Properties...
+				->Add
+				->Offset: TBD
+				->Color: ByLayer
+				->Linetype: ByLayer
+			->Multiline Properties...->all by default
+			->Save...
+				C:\Users\Andrey\AppData\Roaming\Autodesk\AutoCAD 2004\R16.0\enu\Support\acad.mln
+			->Load...->File...
+			->Current: Staff_Lines
+		Draw->Multiline (ML,        *MLINE)
+	- create a hatch pattern (Chapter 15)
+		* hatch patterns inherit current LT
+		* once set settings become current
+		Draw->Hatch... (H,         *BHATCH)
+			->Type: Predefined
+			?C:\Users\Andrey\AppData\Roaming\Autodesk\AutoCAD 2004\R16.0\enu\support\acad.pat
+			->Swatch->Hatch Pattern Palette->ANSI: ANSI31
+			->Scale: TBD (HPSCALE, set according to limits)
+			->Angle: 0 (HPANG, inherit from pattern)
+			->Select Objects (no temp pline created)
+			->View Selections
+			->Preview
+			->OK
+		?Tools->DesignCenter
+			->Search->Look for: Hatch Pattern Files->Search for the name: *->Search Now->acad.pat->Load into Content Area->ANSI31
+		?Draw->Wipeout
+		?Modify->Object->Hatch... (HE,        *HATCHEDIT)
+			* grips; Tools->Options...->Selection->Associative Hatch
+		* Hatch Pattern Palette->Other Predefined->Solid; Swatch->Select Color...; fill/regen, FILLMODE
+	- create a set of tool palettes (Chapter 20.6) (Glitchy!)
+		Tools->Customize->Tool Palettes...->Import.../Export... (*.xtp)
+		Tools->Tool Palettes Window
+			->Transparency...: TBD
+			->View Options...->View style->List View
+		(Tool) Properties
+			->Name: Upstem
+			->Description: Upstem
+	- create an array (Chapter 6.3) recipe
+		* Modify->Copy (copy) vs Edit->Copy (copyclip)
+		* -/+ offsets; unit cell
+		Modify->Array... (AR,        *ARRAY)
+			->Select objects
+			->Rows: TBD
+			->Columns: TBD
+			->Row offset: TBD
+			->Column offset: TBD
+			->Preview
+			->OK
+	- study "Command Reference"->"Commands"->"G Commands"->"GROUP Command"
+		* Creates and manages saved sets of objects called groups.
+		"User's Guide"->"Create and Modify Objects"->"Change Existing Objects"->"Select Objects"->"Group Objects"
+			* can be nested
+			* Ctrl+H (PICKSTYLE [group/associative hatch selection]); Ctrl+Shift+A (Group on/off); object selection cycling
+			- A group is a saved set of objects you can select and edit together or separately as needed.
+				Groups provide an easy way to combine drawing elements that you need to manipulate as a unit.
+				You can change the components of groups as you work by adding or removing objects. 
+				In some ways, groups resemble blocks, which provide another method of combining objects into a named set.
+				For example, the groups you create are saved from session to session.
+				However, you can edit individual objects in groups more easily than you can edit them in blocks,
+				which must be exploded first. Unlike blocks, groups cannot be shared with other drawings.
+		(G,         *GROUP)->Object Grouping
+			->Group Name: Upstem
+			->Group Description: Upstem
+			->Create Group->New<
+		- select groups by name at the Select Objects prompt
+	- study "User's Guide"->"The User Interface"->"The Command Window"
+		* ENTER, SPACEBAR or right-click (again to repeat or multiple/ESC or "six most recently used commands")
+		* a set of options vs a dialog box
+		* Many commands/system variables can be used transparently (transparent/interrupted commands [' >>]).
+			* Commands that do not select objects, create new objects, or end the drawing session usually can be used transparently.
+		* a system variable can be functionally equivalent to a command
+		* UP/DOWN/LEFT/RIGHT/HOME/END; PAGE UP/PAGE DOWN; DEL/BACKSPACE; INS; F2 (complete command history)
+		* Enter a hyphen before the command to suppress the dialog box.
+		* Even when FILEDIA is set to 0, you can display a file dialog box by entering a tilde (~) at the first prompt.
+	- study "Command Reference"->"Command Modifiers"
+		* Shift+right-click (object snap shortcut menu)
+		* running object snaps
+		* Coordinate Filter/Direct Distance Entry/From/Tracking/Object Snaps/Selection Mode
+			- .x .y .z .xy .xz .yz
+			- At a prompt to locate a point, enter a numeric value (usually used with Ortho or Snap).
+			- At an AutoCAD prompt for locating a point, enter from, and then enter a temporary reference or base point
+				from which you can specify an offset to locate the next point.
+			- At any AutoCAD prompt to locate a point, enter tracking, track, or tk. (check out tt)
+				- Tracking turns on Ortho mode and can be used with Snap mode.
+			- -osnap
+				- End,Mid,Cen,Node,Quad,Int,Ins,Perp,Tan,Near,App Int,Ext,Par
+				* object snap target box
+			- At a prompt to select objects, enter one of the valid selection modes described in the SELECT command.
+				- Window/Last/Crossing/BOX/ALL/Fence/WPolygon/CPolygon/Group/CLass/Add/Remove/Multiple/Previous/Undo/AUto/SIngle
+				* object selection target vs crosshairs
+	- study "Customization Guide"->"Basic Customization"->"Define Custom Commands"->"Create Command Aliases"
+		Tools->Customize->Edit Custom Files->Program Parameters (acad.pgp)/reinit
+		* You cannot use command aliases in command scripts.
+		* read guidelines in acad.pgp
+	* Tools->Inquiry
+	- use "Teach yourself AutoCAD 2004" book as master roadmap
+	- make as flexible as possible; avoid hardwiring
+	- favor everything named
+	- favor round numbers and simple proportions
+	- use block/group hierarchies
+	- use a system of non-printable placeholders together w/ object snapping for easy placement
+	- develop a set of user tool palettes
+- create a set of recipes
+- develop in parallel: template, example drawing, support files; commit as you go
+- make a new system image w/ a) ACAD template system b) Finale w/ font pack
+- maintain a list of "enlightments"
+	- 4(2) beats per staff - "single(double) density"
+	- limit project to Trilogy example, make provisions for extension
+	- adopt "no dots" text abbreviation style
+	- favor continuous lines
+	- use multiline for staves/beams
+	- use splines for intonation markings/arpeggios
+	- do not differentiate grace notes
+	- do not employ subbeams
+	- use fixed music spacing
+	- do not use a tie to extend note's duration, use a horizontal line instead
+- enumerate resources
+	- AutoCAD 2004
+		- Teach yourself AutoCAD 2004
+	- Finale 2012
+		- Finale 2012 USER MANUAL (Reference > Character Sets > Maestro Font)
+		- Finale 2003.pdf
+	- 03 - Example 15 Trilogy Suite (B harmonic minor)
+	- Microsoft Word
+	- Merriam-Webster
+	- Vegas Scripts
+	- Nuances.pdf
+- command aliases
+	C:\Users\Andrey\AppData\Roaming\Autodesk\AutoCAD 2004\R16.0\enu\Support\acad.pgp
+;  -- Sample aliases for AutoCAD commands --
+;  These examples include most frequently used commands.
+
+3A,        *3DARRAY
+3DO,       *3DORBIT
+3F,        *3DFACE
+3P,        *3DPOLY
+A,         *ARC
+ADC,       *ADCENTER
+AA,        *AREA
+AL,        *ALIGN
+AP,        *APPLOAD
+AR,        *ARRAY
+-AR,       *-ARRAY
+ATT,       *ATTDEF
+-ATT,      *-ATTDEF
+ATE,       *ATTEDIT
+-ATE,      *-ATTEDIT
+ATTE,      *-ATTEDIT
+B,         *BLOCK
+-B,        *-BLOCK
+BH,        *BHATCH
+BO,        *BOUNDARY
+-BO,       *-BOUNDARY
+BR,        *BREAK
+C,         *CIRCLE
+CH,        *PROPERTIES
+-CH,       *CHANGE
+CHA,       *CHAMFER
+CHK,       *CHECKSTANDARDS
+COL,       *COLOR
+COLOUR,    *COLOR
+CO,        *COPY
+CP,        *COPY
+D,         *DIMSTYLE
+DAL,       *DIMALIGNED
+DAN,       *DIMANGULAR
+DBA,       *DIMBASELINE
+DBC,       *DBCONNECT
+DC,        *ADCENTER
+DCE,       *DIMCENTER
+DCENTER,   *ADCENTER
+DCO,       *DIMCONTINUE
+DDA,       *DIMDISASSOCIATE
+DDI,       *DIMDIAMETER
+DED,       *DIMEDIT
+DI,        *DIST
+DIV,       *DIVIDE
+DLI,       *DIMLINEAR
+DO,        *DONUT
+DOR,       *DIMORDINATE
+DOV,       *DIMOVERRIDE
+DR,        *DRAWORDER
+DRA,       *DIMRADIUS
+DRE,       *DIMREASSOCIATE
+DS,        *DSETTINGS
+DST,       *DIMSTYLE
+DT,        *TEXT
+DV,        *DVIEW
+E,         *ERASE
+ED,        *DDEDIT
+EL,        *ELLIPSE
+EX,        *EXTEND
+EXIT,      *QUIT
+EXP,       *EXPORT
+EXT,       *EXTRUDE
+F,         *FILLET
+FI,        *FILTER
+G,         *GROUP
+-G,        *-GROUP
+GR,        *DDGRIPS
+H,         *BHATCH
+-H,        *HATCH
+HE,        *HATCHEDIT
+HI,        *HIDE
+I,         *INSERT
+-I,        *-INSERT
+IAD,       *IMAGEADJUST
+IAT,       *IMAGEATTACH
+ICL,       *IMAGECLIP
+IM,        *IMAGE
+-IM,       *-IMAGE
+IMP,       *IMPORT
+IN,        *INTERSECT
+INF,       *INTERFERE
+IO,        *INSERTOBJ
+L,         *LINE
+LA,        *LAYER
+-LA,       *-LAYER
+LE,        *QLEADER
+LEN,       *LENGTHEN
+LI,        *LIST
+LINEWEIGHT, *LWEIGHT
+LO,        *-LAYOUT
+LS,        *LIST
+LT,        *LINETYPE
+-LT,       *-LINETYPE
+LTYPE,     *LINETYPE
+-LTYPE,    *-LINETYPE
+LTS,       *LTSCALE
+LW,        *LWEIGHT
+M,         *MOVE
+MA,        *MATCHPROP
+ME,        *MEASURE
+MI,        *MIRROR
+ML,        *MLINE
+MO,        *PROPERTIES
+MS,        *MSPACE
+MT,        *MTEXT
+MV,        *MVIEW
+O,         *OFFSET
+OP,        *OPTIONS
+ORBIT,     *3DORBIT
+OS,        *OSNAP
+-OS,       *-OSNAP
+P,         *PAN
+-P,        *-PAN
+PA,        *PASTESPEC
+PARTIALOPEN, *-PARTIALOPEN
+PE,        *PEDIT
+PL,        *PLINE
+PO,        *POINT
+POL,       *POLYGON
+PR,        *PROPERTIES
+PRCLOSE,   *PROPERTIESCLOSE
+PROPS,     *PROPERTIES
+PRE,       *PREVIEW
+PRINT,     *PLOT
+PS,        *PSPACE
+PTW,       *PUBLISHTOWEB
+PU,        *PURGE
+-PU,       *-PURGE
+R,         *REDRAW
+RA,        *REDRAWALL
+RE,        *REGEN
+REA,       *REGENALL
+REC,       *RECTANG
+REG,       *REGION
+REN,       *RENAME
+-REN,      *-RENAME
+REV,       *REVOLVE
+RO,        *ROTATE
+RPR,       *RPREF
+RR,        *RENDER
+S,         *STRETCH
+SC,        *SCALE
+SCR,       *SCRIPT
+SE,        *DSETTINGS
+SEC,       *SECTION
+SET,       *SETVAR
+SHA,       *SHADEMODE
+SL,        *SLICE
+SN,        *SNAP
+SO,        *SOLID
+SP,        *SPELL
+SPL,       *SPLINE
+SPE,       *SPLINEDIT
+ST,        *STYLE
+STA,       *STANDARDS
+SU,        *SUBTRACT
+T,         *MTEXT
+-T,        *-MTEXT
+TA,        *TABLET
+TH,        *THICKNESS
+TI,        *TILEMODE
+TO,        *TOOLBAR
+TOL,       *TOLERANCE
+TOR,       *TORUS
+TP,        *TOOLPALETTES
+TR,        *TRIM
+UC,        *UCSMAN
+UN,        *UNITS
+-UN,       *-UNITS
+UNI,       *UNION
+V,         *VIEW
+-V,        *-VIEW
+VP,        *DDVPOINT
+-VP,       *VPOINT
+W,         *WBLOCK
+-W,        *-WBLOCK
+WE,        *WEDGE
+X,         *EXPLODE
+XA,        *XATTACH
+XB,        *XBIND
+-XB,       *-XBIND
+XC,        *XCLIP
+XL,        *XLINE
+XR,        *XREF
+-XR,       *-XREF
+Z,         *ZOOM
+
+- single-letter aliases from above list
+A,         *ARC
+B,         *BLOCK
+C,         *CIRCLE
+D,         *DIMSTYLE
+E,         *ERASE
+F,         *FILLET
+G,         *GROUP
+H,         *BHATCH
+I,         *INSERT
+J
+K
+L,         *LINE
+M,         *MOVE
+N
+O,         *OFFSET
+P,         *PAN
+Q
+R,         *REDRAW
+S,         *STRETCH
+T,         *MTEXT
+U
+V,         *VIEW
+W,         *WBLOCK
+X,         *EXPLODE
+Y
+Z,         *ZOOM
