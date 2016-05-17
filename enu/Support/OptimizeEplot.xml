@@ -1,0 +1,9 @@
+<Rules>
+    <FileRule attribute = "filename" ordering = "specified" valueType = "string" value = "manifest.xml" />
+    <SectionRule attribute = "type" ordering = "specified" valueType = "stringList" value = "com.autodesk.dwf.ePlot, *" />
+    <ResourceRule attribute = "role" ordering = "specified" valueType = "string" value = "descriptor" />
+    <ResourceRule attribute = "role" ordering = "specified" valueType = "string" value = "thumbnail" />
+    <ResourceRule attribute = "role" ordering = "specified" valueType = "stringList" value = "font, 2d streaming graphics, *" />
+    <DescriptorRule elementPath = "Page" attribute = "plotOrder" ordering = "ascending" valueType = "long" />
+    <FileRule attribute = "filesize" ordering = "ascending" valueType = "long" />
+</Rules>

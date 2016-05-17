@@ -1,0 +1,50 @@
+<Catalog>
+	<ItemID idValue="dbd27901-ac5e-4778-bb06-a5df44eaf344"/>
+	<StockTools>
+		<StockTool>
+			<ItemID idValue="{2AE7120B-CEE4-47A5-9B50-EF9F3ADE24AC}"/>
+			<Properties>
+				<ItemName src="AcTpCatalogRes.dll" resource="188"/>
+			</Properties>
+			<Source idValue="15952064-44c8-4874-86cf-08b5e5c1170b"/>
+			<Object>
+				<ComClass>
+					<CLSID idValue="{2AE7120B-CEE4-47A5-9B50-EF9F3ADE24AC}"/>
+				</ComClass>
+				<Module>
+					<File>AcTcTools.arx</File>
+				</Module>
+			</Object>
+		</StockTool>
+		<StockTool>
+			<ItemID idValue="{C9AB9290-FC5A-458B-AEB4-BDF9BE6A5E55}"/>
+			<Properties>
+				<ItemName src="AcTpCatalogRes.dll" resource="184"/>
+			</Properties>
+			<Source idValue="db288698-e6b7-4c26-9bb7-8881a36785f2"/>
+			<Object>
+				<ComClass>
+					<CLSID idValue="{C9AB9290-FC5A-458B-AEB4-BDF9BE6A5E55}"/>
+				</ComClass>
+				<Module>
+					<File>AcTcTools.arx</File>
+				</Module>
+			</Object>
+		</StockTool>
+		<StockTool>
+			<ItemID idValue="{AF0F641B-9CCE-4474-8582-EFE0A38410FC}"/>
+			<Properties>
+				<ItemName src="AcTpCatalogRes.dll" resource="185"/>
+			</Properties>
+			<Source idValue="59a63456-0025-4ea0-9cb2-608916d5177c"/>
+			<Object>
+				<ComClass>
+					<CLSID idValue="{AF0F641B-9CCE-4474-8582-EFE0A38410FC}"/>
+				</ComClass>
+				<Module>
+					<File>AcTcTools.arx</File>
+				</Module>
+			</Object>
+		</StockTool>
+	</StockTools>
+</Catalog>

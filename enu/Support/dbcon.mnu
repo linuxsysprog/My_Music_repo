@@ -1,0 +1,159 @@
+//
+//      dbConnect Menu - AutoCAD
+//
+//      Copyright (C) 1986, 1987, 1988, 1989, 1990, 1991, 1992, 1994, 1996, 1997, 1998,
+//      1999, 2000, 2001, 2003 by Autodesk, Inc.
+//
+//      Permission to use, copy, modify, and distribute this software
+//      for any purpose and without fee is hereby granted, provided that
+//      the above copyright notice appears in all copies and that both
+//      the copyright notice and the limited warranty and restricted rights
+//      notice below appear in all supporting documentation.
+//
+//      AUTODESK, INC. PROVIDES THIS PROGRAM "AS IS" AND WITH ALL FAULTS.
+//      AUTODESK, INC. SPECIFICALLY DISCLAIMS ANY IMPLIED WARRANTY OF
+//      MERCHANTABILITY OR FITNESS FOR A PARTICULAR USE.  AUTODESK, INC.
+//      DOES NOT WARRANT THAT THE OPERATION OF THE PROGRAM WILL BE
+//      UNINTERRUPTED OR ERROR FREE.
+//
+//      Use, duplication, or disclosure by the U.S. Government is subject to
+//      restrictions set forth in FAR 52.227-19 (Commercial Computer
+//      Software - Restricted Rights) and DFAR 252.227-7013(c)(1)(ii)
+//      (Rights in Technical Data and Computer Software), as applicable.
+
+***MENUGROUP=dbConnect
+
+***POP0
+**dbConnect 
+ID_MndbConnect    [db&Connect]   
+ID_MndbcDataSrcs  [->&Data Sources]
+ID_dbcConfigure     [&Configure...]^C^C^P_dbcConfigure
+                    [--]
+ID_dbcConnect       [<-C&onnect...]^C^C^P_dbcConnect
+ID_MndbcTemplates [->&Templates]
+ID_dbcDefineLT      [&New Link Template...]^C^C^P_dbcDefineLT
+ID_dbcDefineLLT     [New &Label Template...]^C^C^P_dbcDefineLLT
+                    [--]
+ID_dbcEditLT        [&Edit Link Template...]^C^C^P_dbcEditLT
+ID_dbcEditLLT       [Edit L&abel Template...]^C^C^P_dbcEditLLT
+                    [--]
+ID_dbcDeleteLT      [Delete Lin&k Template...]^C^C^P_dbcDeleteLT
+ID_dbcDeleteLLT     [Delete La&bel Template...]^C^C^P_dbcDeleteLLT
+                    [--]
+ID_dbcImportTS      [&Import Template Set...]^C^C^P_dbcImportTS
+ID_dbcExportTS      [E&xport Template Set...]^C^C^P_dbcExportTS
+                    [--]
+ID_dbcPropsLT       [&Link Template Properties...]^C^C^P_dbcPropsLT
+ID_dbcPropsLBLT     [<-Label &Template Properties...]^C^C^P_dbcPropsLBLT
+ID_MndbcQueries   [->&Queries]
+ID_dbcExecuteQry    [&Execute Query...]^C^C^P_dbcExecuteQry
+                    [--]
+ID_dbcNewQryTable   [&New Query on an External Table...]^C^C^P_dbcNewQryTable
+ID_dbcNewQryLT      [New Query on a &Link Template...]^C^C^P_dbcNewQryLT
+ID_dbcEditQry       [Edit &Query...]^C^C^P_dbcEditQry
+ID_dbcDeleteQry     [Delete Quer&y...]^C^C^P_dbcDeleteQry
+                    [--]
+ID_dbcImportQS      [&Import Query Set...]^C^C^P_dbcImportQS
+ID_dbcExportQS      [<-E&xport Query Set...]^C^C^P_dbcExportQS
+                  [--]
+ID_MndbcLinks     [->&Links]
+ID_dbcSelectLinks   [&Link Select...]^C^C^P_dbcSelectLinks
+                    [--]
+ID_dbcDeleteLinks   [&Delete Links...]^C^C^P_dbcDeleteLinks
+ID_dbcExportLinks   [&Export Links...]^C^C^P_dbcExportLinks
+ID_dbcLinkManager   [<--Link &Manager...]^C^C^P_dbcLinkManager
+ID_MndbcLabels    [->La&bels]
+ID_dbcReloadLabels  [&Reload Labels...]^C^C^P_dbcReloadLabels
+                    [--]
+ID_dbcShowLabels    [&Show Labels...]^C^C^P_dbcShowLabels
+ID_dbcHideLabels    [&Hide Labels...]^C^C^P_dbcHideLabels
+ID_dbcDeleteLabels  [<-&Delete Labels...]^C^C^P_dbcDeleteLabels
+                  [--]
+ID_MndbcViewData  [->&View Data]
+ID_dbcViewTable     [&View External Table...]^C^C^P_dbcViewTable
+ID_dbcEditTable     [&Edit External Table...]^C^C^P_dbcEditTable
+                  [--]
+ID_dbcViewLTable    [View &Linked Table...]^C^C^P_dbcViewLinkedTable
+ID_dbcEditLTable    [Edit Linked &Table...]^C^C^P_dbcEditLinkedTable
+                    [--]
+ID_dbcDataExecQry   [<-Execute &Query...]^C^C^P_dbcExecuteQry
+                  [--]
+ID_dbcSync        [&Synchronize...]^C^C^P_dbcSync
+ID_dbcLinkConv    [Link &Conversion...]^C^C^P_dbcLinkConversion
+
+***POP1
+**Data View 
+ID_MndvDataView     [D&ata View]   
+ID_dvViewLObjs      [&View Linked Objects]^C^C^P_dvViewLObjects
+ID_dvViewLRecs      [V&iew Linked Records]^C^C^P_dvViewLRecords
+ID_dvAutoViewObjs   [A&utoView Linked Objects]^C^C^P_dvAutoViewObjects
+ID_dvAutoViewRecs   [Au&toView Linked Records]^C^C^P_dvAutoViewRecords
+                    [--]
+ID_dvLink           [&Link!]^C^C^P_dvLink
+ID_MndvLinkSettings [->Link and Label &Settings]
+ID_dvLinkToObj          [Create &Links]^C^C^P_dvLinkToObject
+ID_dvLinkPlace          [Create &Attached Labels]^C^C^P_dvLinkPlace
+ID_dvPlace              [<-Create &Freestanding Labels]^C^C^P_dvPlace
+                    [--]
+ID_dvFind           [&Find...]^C^C^P_dvFind
+ID_dvReplace        [&Replace...]^C^C^P_dvReplace
+                    [--]
+ID_dvPrintPreview   [Pri&nt Preview...]^C^C^P_dvPrintPreview
+ID_dvPrint          [&Print...]^C^C^P_dvPrint
+                    [--]
+ID_dvSettings       [&Options....]^C^C^P_dvSettings
+ID_dvClearMarks     [Cl&ear Marks]^C^C^P_dvClearMarks
+                    [--]
+ID_dvFormat         [For&mat...]^C^C^P_dvFormat
+
+
+***HELPSTRINGS
+ID_dbcConfigure     [Configures an external database for use with AutoCAD]
+ID_dbcConnect       [Establishes a connection to an external data source]
+ID_dbcDefineLT      [Creates a new link template in the current drawing]
+ID_dbcDefineLLT     [Creates a new label template in the current drawing]
+ID_dbcEditLT        [Edits an existing link template]
+ID_dbcEditLLT       [Edits an existing label template]
+ID_dbcDeleteLT      [Deletes a link template from the current drawing]
+ID_dbcDeleteLLT     [Deletes a label template from the current drawing]
+ID_dbcImportTS      [Imports a set of templates into the current drawing]
+ID_dbcExportTS      [Exports a set of templates from the current drawing]
+ID_dbcPropsLT       [Modifies the properties of a link template]
+ID_dbcExecuteQry    [Executes a stored query]
+ID_dbcNewQryTable   [Creates a new query in the current drawing]
+ID_dbcNewQryLT      [Creates a new query in the current drawing]
+ID_dbcEditQry       [Edits an existing query]
+ID_dbcDeleteQry     [Deletes a query from the current drawing]
+ID_dbcImportQS      [Imports a set of queries into the current drawing]
+ID_dbcExportQS      [Exports a set of queries from the current drawing]
+ID_dbcSelectLinks   [Performs a Link Select operation]
+ID_dbcDeleteLinks   [Deletes all links based on a particular link template from the current drawing]
+ID_dbcExportLinks   [Exports all links based on a particular link template from the current drawing]
+ID_dbcLinkManager   [Edits the key values of a selected link]
+ID_dbcReloadLabels  [Refreshes all labels based on a particular label template with new database table values]
+ID_dbcShowLabels    [Turns on label visibility of a selected label template]
+ID_dbcHideLabels    [Turns off label visibility of a selected label template]
+ID_dbcDeleteLabels  [Deletes all labels based on a particular label template from the current drawing]
+ID_dbcViewTable     [Opens an external database table in Read-only mode]
+ID_dbcEditTable     [Opens an external database table in Edit mode]
+ID_dbcViewLTable    [Opens an external database table in Read-only mode]
+ID_dbcEditLTable    [Opens an external database table in Edit mode]
+ID_dbcDataExecQry   [Executes a stored query]
+ID_dbcSync          [Detects broken links in the current drawing]
+ID_dbcLinkConv      [Converts links from previous releases to AutoCAD 2000 format]  
+ID_dvViewLObjs      [Selects linked graphical objects when their corresponding records are selected]
+ID_dvViewLRecs      [Selects linked records when their corresponding graphical objects are selected]
+ID_dvAutoViewObjs   [Automatically selects linked graphical objects when their corresponding records are selected]
+ID_dvAutoViewRecs   [Automatically selects linked records when their corresponding graphical objects are selected]
+ID_dvLink           [Creates a link or a label]
+ID_dvLinkToObj      [Turns Link Creation mode on]
+ID_dvLinkPlace      [Turns Attached Label Creation mode on]
+ID_dvPlace          [Turns Freestanding Label Creation mode on]
+ID_dvFind           [Searches for a value in the Data View window]
+ID_dvReplace        [Searches for and replaces a value in the Data View window]
+ID_dvPrintPreview   [Displays a preview image of a report in the Data View window]
+ID_dvPrint          [Prints the contents of the Data View window to the current system printer]
+ID_dvSettings       [Specifies Data View and query options]
+ID_dvClearMarks     [Clears all marks from the Data View window]
+ID_dvFormat         [Applies formatting to the Data View window display]
+ID_dbcPropsLBLT     [Modifies the properties of a label template]
