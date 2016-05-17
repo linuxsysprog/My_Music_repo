@@ -27,12 +27,12 @@ Document Template
 Page layout
 	- create Page_layout Layout layer
 	Paper size: Letter (215.9 mm x 279.4 mm) 8.5x11
-	Page Margins (Non-mirror margins, Top/Bottom/Left/Right margin size TBD) <--
+	Page Margins (Non-mirror margins, Top/Bottom/Left/Right margin size TBD)
 		Top: 19.05 Bottom: 19.05 Left: 25.4 Right: 12.7
 		- create Page Margins Rectangle: Corner: 0,0 Length: 177.8 Width: 241.3
 		- create Printable area Rectangle 209.55 x 273.05 mm
 		- center rectangle
-	Punch holes (array of 3 holes, centers/radii TBD)
+	Punch holes (array of 3 holes, centers/radii TBD) <--
 		Raw numbers (mm) Pitch 104.25 Offset 29.5 d 2.925 D 37.125 R 18.5625 hole D 6.6
 		Adjusted numbers (mm) Pitch 104
 					Offset 29.5
