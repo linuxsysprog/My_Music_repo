@@ -10,18 +10,17 @@ Ex 2
 x draft a plan
 - configure
 	- put AutoCAD configs under version control
-		- move C:\Users\Andrey\AppData\Local\Autodesk\AutoCAD 2004\R16.0\enu\Template to
-			C:\Users\Andrey\AppData\Roaming\Autodesk\AutoCAD 2004\R16.0\enu
-		- Tools->Options...->Files->Drawing Template Settings->Drawing Template File Location:
-			C:\Users\Andrey\AppData\Roaming\Autodesk\AutoCAD 2004\R16.0\enu\Template
+		- check out enu folder
+		- update path to templates
+			- Tools->Options...->Files->Drawing Template Settings->Drawing Template File Location:
 		- create Windows Explorer favorite for enu
-	- Tools->Customize->Keyboard...->Format Menu->Layer: Ctrl+Shift+L
-	- define Ctrl+Shift+Q zoom previous
+	? Tools->Customize->Keyboard...->Format Menu->Layer: Ctrl+Shift+L
+	? define Ctrl+Shift+Q zoom previous
 	? create qselect alias
 	! create ZA alias
-	- syscodepage; Control Panel\Clock, Language, and Region\Region and language\Administrative
+	? syscodepage; Control Panel\Clock, Language, and Region\Region and language\Administrative
 		\Change system locale...\Russian (Russia)\Restart now
-	- properties/DesignCenter to left; auto-hide DesignCenter
+	- remove draw/modify toolbars; dock properties
 	- show Startup dialog
 x create a registry of notation elements, define all names
 Document
@@ -41,7 +40,7 @@ Page layout
 					d 3
 					R 18.5
 					hole D 6.35
-	Page Numbers <-- (rename all named objects to blah_blh; create title_blk mock-up)
+	Page Numbers <-- (create title_blk mock-up)
 		Position: Bottom of page
 		Alignment: Right
 		Format: "Page N of N"
