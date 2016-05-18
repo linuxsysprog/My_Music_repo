@@ -21,6 +21,7 @@ x draft a plan
 	! create ZA alias
 	- syscodepage; Control Panel\Clock, Language, and Region\Region and language\Administrative
 		\Change system locale...\Russian (Russia)\Restart now
+	- auto-hide properties/DesignCenter (on the left)
 x create a registry of notation elements, define all names
 Document
 Document Template
