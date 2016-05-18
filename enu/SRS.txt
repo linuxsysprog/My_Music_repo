@@ -21,7 +21,8 @@ x draft a plan
 	! create ZA alias
 	- syscodepage; Control Panel\Clock, Language, and Region\Region and language\Administrative
 		\Change system locale...\Russian (Russia)\Restart now
-	- auto-hide properties/DesignCenter (on the left)
+	- properties/DesignCenter to left; auto-hide DesignCenter
+	- show Startup dialog
 x create a registry of notation elements, define all names
 Document
 Document Template
@@ -33,14 +34,14 @@ Page layout
 		- create Page Margins Rectangle: Corner: 0,0 Length: 177.8 Width: 241.3
 		- create Printable area Rectangle 209.55 x 273.05 mm
 		- center rectangle
-	Punch holes (array of 3 holes, centers/radii TBD) <--
+	Punch holes (array of 3 holes, centers/radii TBD)
 		Raw numbers (mm) Pitch 104.25 Offset 29.5 d 2.925 D 37.125 R 18.5625 hole D 6.6
 		Adjusted numbers (mm) Pitch 104
 					Offset 29.5
 					d 3
 					R 18.5
 					hole D 6.35
-	Page Numbers
+	Page Numbers <-- (rename all named objects to blah_blh; create title_blk mock-up)
 		Position: Bottom of page
 		Alignment: Right
 		Format: "Page N of N"
@@ -59,7 +60,7 @@ Page layout
 	Time Signature  (alike Tempo)
 	Legend (contents TBD)
 		Alignment: Top/Left
-	SVN block (alike Composer)
+	SVN block (alike Composer)/plot stamp
 		URL (SVN URL)
 		Revision (SVN revision number)
 		Last changed (SVN time stamp)
