@@ -27,7 +27,9 @@ x create a registry of notation elements, define all names
 Document
 Document Template
 Page layout
-	- create Page_layout Layout layer
+	- align text on layer tmp using tables <--
+	- convert text on layer tmp into attributes on layer title_blk
+	- create title_blk block
 	Paper size: Letter (215.9 mm x 279.4 mm) 8.5x11
 	Page Margins (Non-mirror margins, Top/Bottom/Left/Right margin size TBD)
 		Top: 19.05 Bottom: 19.05 Left: 25.4 Right: 12.7
