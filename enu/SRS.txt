@@ -1,4 +1,4 @@
-$Id: SRS.txt 260 2016-05-17 09:03:51Z Andrey $
+$Id$
 Me vs. Guitar College Tabs
 
 Ex 2
