@@ -41,7 +41,7 @@ Page layout
 					d 3
 					R 18.5
 					hole D 6.35
-	Page Numbers <-- (create title_blk mock-up)
+	Page Numbers
 		Position: Bottom of page
 		Alignment: Right
 		Format: "Page N of N"
