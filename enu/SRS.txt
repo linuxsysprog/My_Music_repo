@@ -22,6 +22,7 @@ x draft a plan
 		\Change system locale...\Russian (Russia)\Restart now
 	- remove draw/modify toolbars; dock properties
 	- show Startup dialog
+	- Options->Open and Save->Automatic save: uncheck
 x create a registry of notation elements, define all names
 Document
 Document Template
@@ -48,10 +49,10 @@ Page layout
 	Title
 		Alignment: Center
 		Hight/Style TBD
-	Composer
+	Composed by
 		Alignment: Right
 		Hight/Style TBD
-	Transcribed and engraved by (alike Composer)
+	Transcribed by (alike Composer)
 	Section Name (alike Title)
 	Tempo
 		Alignment: Left
