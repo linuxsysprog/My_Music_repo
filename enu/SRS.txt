@@ -27,7 +27,7 @@ x create a registry of notation elements, define all names
 Document
 Document Template
 Page layout
-	- align text on layer tmp using tables <--
+	- align text on layer tmp using grid <--
 	- convert text on layer tmp into attributes on layer title_blk
 	- create title_blk block
 	Paper size: Letter (215.9 mm x 279.4 mm) 8.5x11
