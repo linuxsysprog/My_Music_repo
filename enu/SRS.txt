@@ -23,12 +23,12 @@ x draft a plan
 	- remove draw/modify toolbars; dock properties
 	- show Startup dialog
 	- Options->Open and Save->Automatic save: uncheck
+	- disable comm center
 x create a registry of notation elements, define all names
 Document
 Document Template
 Page layout
-	- align text on layer tmp using grid <--
-	- convert text on layer tmp into attributes on layer title_blk
+	- convert text on layer tmp into attributes on layer title_blk <--
 	- create title_blk block
 	Paper size: Letter (215.9 mm x 279.4 mm) 8.5x11
 	Page Margins (Non-mirror margins, Top/Bottom/Left/Right margin size TBD)
