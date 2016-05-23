@@ -9,18 +9,18 @@ Ex 2
 
 x draft a plan
 - configure
-	- put AutoCAD configs under version control
-		- check out enu folder
-		- update path to templates
-			- Tools->Options...->Files->Drawing Template Settings->Drawing Template File Location:
-		- create Windows Explorer favorite for enu
+	- check out enu folder
+	- update path to templates
+		- Tools->Options...->Files->Drawing Template Settings->Drawing Template File Location:
+	- create Windows Explorer favorite for enu
 	? Tools->Customize->Keyboard...->Format Menu->Layer: Ctrl+Shift+L
 	? define Ctrl+Shift+Q zoom previous
 	? create qselect alias
 	! create ZA alias
 	? syscodepage; Control Panel\Clock, Language, and Region\Region and language\Administrative
 		\Change system locale...\Russian (Russia)\Restart now
-	- remove draw/modify toolbars; dock properties
+	- remove draw/modify toolbars
+	- dock properties
 	- show Startup dialog
 	- Options->Open and Save->Automatic save: uncheck
 	- disable comm center
@@ -28,8 +28,6 @@ x create a registry of notation elements, define all names
 Document
 Document Template
 Page layout
-	- convert text on layer tmp into attributes on layer title_blk <--
-	- create title_blk block
 	Paper size: Letter (215.9 mm x 279.4 mm) 8.5x11
 	Page Margins (Non-mirror margins, Top/Bottom/Left/Right margin size TBD)
 		Top: 19.05 Bottom: 19.05 Left: 25.4 Right: 12.7
@@ -66,7 +64,7 @@ Page layout
 		URL (SVN URL)
 		Revision (SVN revision number)
 		Last changed (SVN time stamp)
-Staff (=measure)
+Staff (=measure) <--
 	- variable pitch
 	Staff Lines (LWT TBD; constant pitch, TBD)
 	Barline (=beat) (5 pcs.; LWT TBD)
