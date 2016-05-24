@@ -64,12 +64,6 @@ Page layout
 		URL (SVN URL)
 		Revision (SVN revision number)
 		Last changed (SVN time stamp)
-split drawing into Common.dwt, Page1.dwt, Page2.dwt; Page1.dwg, Page2.dwg; Page1.pdf, Page2.pdf;
-draw a rec offset off vport boundary
-see if two vports different in size can both have 1:1 scale
-create vports on pages 2 and 3
-extend model limits
-create vport recs in model/paper space; add labels; set vport scale/pan; create center text
 Staff (=measure) <--
 	- variable pitch
 	Staff Lines (LWT TBD; constant pitch, TBD)
