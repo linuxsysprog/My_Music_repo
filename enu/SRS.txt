@@ -64,10 +64,10 @@ Page layout
 		URL (SVN URL)
 		Revision (SVN revision number)
 		Last changed (SVN time stamp)
-Staff (=measure) <--
+Staff (=measure)
 	- variable pitch
 	Staff Lines (LWT TBD; constant pitch, TBD)
-	Barline (=beat) (5 pcs.; LWT TBD)
+	Barline (=beat) (5 pcs.; LWT TBD) <--
 		Double
 		Final
 		Forward Repeat
