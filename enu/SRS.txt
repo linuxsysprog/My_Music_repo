@@ -23,6 +23,7 @@ x draft a plan
 	- dock properties
 	- show Startup dialog
 	- Options->Open and Save->Automatic save: uncheck
+	- Options->Open and Save->Create backup copy with each save: uncheck
 	- disable comm center
 x create a registry of notation elements, define all names
 Document
@@ -129,6 +130,8 @@ Fingering(=left hand)
 	Floor Number (0 1/2 Full "1 1/2" 2)
 	Ceiling Number (same as above)
 	Spline Text (1234 () F w A sh ll) [Fingers wrist Arm Push Pull]
+- revise naming scheme for named objects
+- revise attributes: tags, prompts, values and modes
 - develop a set of ACAD templates
 	- write install.bat to install *.dwt, *.stb, *.pss, *.pc3 files
 	- setup Drawing, create a Template (Chapter 8)
