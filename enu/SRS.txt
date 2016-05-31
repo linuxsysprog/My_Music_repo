@@ -21,7 +21,7 @@ x draft a plan
 		\Change system locale...\Russian (Russia)\Restart now
 	- remove draw/modify toolbars
 	- dock properties
-	- show Startup dialog
+	? show Startup dialog
 	- Options->Open and Save->Automatic save: uncheck
 	- Options->Open and Save->Create backup copy with each save: uncheck
 	- disable comm center
@@ -91,12 +91,7 @@ Note <--
 		see "Duration"
 	Parenthesized
 	Duration
-		Quarter
-		Eighth
-		Sixteenth
-		Thirty-Second
-		Sixty-Fourth
-		Tuplet (3 5 6 7 9 10 11 12)
+		Tuplet (Quarter(1) Eighth(2) 3 Sixteenth(4) 5 6 7 Thirty-Second(8) 9 10 11 12 ?Sixty-Fourth)
 		Dot
 		Tie Line
 	Tuplet Bracket
