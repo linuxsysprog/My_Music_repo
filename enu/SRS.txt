@@ -8,23 +8,6 @@ Ex 2
 - 
 
 x draft a plan
-- configure
-	- check out enu folder
-	- update path to templates
-		- Tools->Options...->Files->Drawing Template Settings->Drawing Template File Location:
-	- create Windows Explorer favorite for enu
-	? Tools->Customize->Keyboard...->Format Menu->Layer: Ctrl+Shift+L
-	? define Ctrl+Shift+Q zoom previous
-	? create qselect alias
-	! create ZA alias
-	? syscodepage; Control Panel\Clock, Language, and Region\Region and language\Administrative
-		\Change system locale...\Russian (Russia)\Restart now
-	- remove draw/modify toolbars
-	- dock properties
-	? show Startup dialog
-	- Options->Open and Save->Automatic save: uncheck
-	- Options->Open and Save->Create backup copy with each save: uncheck
-	- disable comm center
 x create a registry of notation elements, define all names
 Document
 Document Template
@@ -78,7 +61,7 @@ Staff (=measure)
 		Alt Parenthesis
 	Measure Number (to the left of staff, bigger; sometimes "Alt")
 	Beat Number (top/left corner of beat, smaller)
-Note <--
+Note <-- (learn now-to join lines; add beam layer/plot style, beam_32 multiline style;)
 	Single/Chorded
 	Flagged
 	Beamed
