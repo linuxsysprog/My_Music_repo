@@ -68,8 +68,10 @@ Note <-- (beam/stem=butt/square; add beam layer/plot style, beam_32 multiline st
 	x create tmp layer/plotstyle/textstyle
 	x reassign all objects (text/attr and other) to tmp/tmp/tmp
 	x delete/purge all blocks and non-tmp layers/plotstyles/textstyles
-	- create all layers/plotstyles/textstyles according to spreadsheet
-	- reassign all objects according to spreadsheet
+	x create all layers/plotstyles/textstyles according to spreadsheet
+	- reassign all objects
+		- according to spreadsheet
+		- all other
 	- reassemble blocks; pay attention to layer/insert point
 	- delete tmp/tmp/tmp
 ---
