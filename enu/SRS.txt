@@ -61,7 +61,7 @@ Staff (=measure)
 		Alt Parenthesis
 	Measure Number (to the left of staff, bigger; sometimes "Alt")
 	Beat Number (top/left corner of beat, smaller)
-Note <-- (learn now-to join lines; add beam layer/plot style, beam_32 multiline style;)
+Note <-- (overhaul styles; beam/stem=butt/square; add beam layer/plot style, beam_32 multiline style)
 	Single/Chorded
 	Flagged
 	Beamed
