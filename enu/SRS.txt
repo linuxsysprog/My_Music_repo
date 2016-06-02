@@ -69,11 +69,12 @@ Note <-- (beam/stem=butt/square; add beam layer/plot style, beam_32 multiline st
 	x reassign all objects (text/attr and other) to tmp/tmp/tmp
 	x delete/purge all blocks and non-tmp layers/plotstyles/textstyles
 	x create all layers/plotstyles/textstyles according to spreadsheet
-	- reassign all objects
-		- according to spreadsheet
-		- all other
+	x reassign all objects
+		x according to spreadsheet
+		x all other
+	x delete tmp/tmp/tmp
+	- convert beat_nums from attr to text
 	- reassemble blocks; pay attention to layer/insert point
-	- delete tmp/tmp/tmp
 ---
 	Single/Chorded
 	Flagged
