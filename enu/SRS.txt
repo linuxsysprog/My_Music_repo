@@ -73,10 +73,12 @@ Note <-- (beam/stem=butt/square; add beam layer/plot style, beam_32 multiline st
 		x according to spreadsheet
 		x all other
 	x delete tmp/tmp/tmp
+	x fix textstyle absent heights
 	- convert beat_nums from attr to text
 	- remove crosshair from punch holes
-	- check and correct round/square line ends on all types of objects
-	- reassemble blocks; pay attention to layer/insert point
+	- go all round
+	- thicken up repeat bars
+	- reassemble blocks on layer blk; pay attention to layer/insert point
 ---
 	Single/Chorded
 	Flagged
