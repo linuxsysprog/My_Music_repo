@@ -77,7 +77,7 @@ Note <-- (beam/stem=butt/square; add beam layer/plot style, beam_32 multiline st
 	x convert beat_nums from attr to text
 	x remove crosshair from punch holes
 	x go all round
-	- thicken up repeat bars
+	x thicken up repeat bars, increase dot size; add barline_end
 	- reassemble blocks on layer blk; pay attention to layer/insert point
 ---
 	Single/Chorded
