@@ -76,7 +76,7 @@ Note <-- (beam/stem=butt/square; add beam layer/plot style, beam_32 multiline st
 	x fix textstyle absent heights
 	x convert beat_nums from attr to text
 	x remove crosshair from punch holes
-	- go all round
+	x go all round
 	- thicken up repeat bars
 	- reassemble blocks on layer blk; pay attention to layer/insert point
 ---
