@@ -78,7 +78,9 @@ Note <-- (beam/stem=butt/square; add beam layer/plot style, beam_32 multiline st
 	x remove crosshair from punch holes
 	x go all round
 	x thicken up repeat bars, increase dot size; add barline_end
-	- reassemble blocks on layer blk; pay attention to layer/insert point
+	- reassemble blocks on layer blk; pay attention to layer/insert point (always bottom-left, top-right or middle-center)
+	- insert blocks
+	- insert non-blocks; check drawing
 ---
 	Single/Chorded
 	Flagged
