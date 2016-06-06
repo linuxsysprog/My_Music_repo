@@ -63,7 +63,7 @@ Staff (=measure)
 	Beat Number (top/left corner of beat, smaller)
 Note <-- (beam/stem=butt/square; add beam layer/plot style, beam_32 multiline style)
 ---
-- overhaul styles
+x overhaul styles
 	x insert/explode all blocks
 	x create tmp layer/plotstyle/textstyle
 	x reassign all objects (text/attr and other) to tmp/tmp/tmp
@@ -78,9 +78,9 @@ Note <-- (beam/stem=butt/square; add beam layer/plot style, beam_32 multiline st
 	x remove crosshair from punch holes
 	x go all round
 	x thicken up repeat bars, increase dot size; add barline_end
-	- reassemble blocks on layer blk; pay attention to layer/insert point (always bottom-left, top-right or middle-center)
-	- insert blocks
-	- insert non-blocks; check drawing
+	x reassemble blocks on layer blk; pay attention to layer/insert point (always bottom-left, top-right or middle-center)
+	x insert blocks
+	x insert non-blocks; check drawing
 ---
 	Single/Chorded
 	Flagged
