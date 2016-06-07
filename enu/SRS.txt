@@ -61,7 +61,7 @@ Staff (=measure)
 		Alt Parenthesis
 	Measure Number (to the left of staff, bigger; sometimes "Alt")
 	Beat Number (top/left corner of beat, smaller)
-Note <-- (beam/stem=butt/square; add beam layer/plot style, beam_32 multiline style)
+Note
 ---
 x overhaul styles
 	x insert/explode all blocks
@@ -81,22 +81,26 @@ x overhaul styles
 	x reassemble blocks on layer blk; pay attention to layer/insert point (always bottom-left, top-right or middle-center)
 	x insert blocks
 	x insert non-blocks; check drawing
----
+--- (fix punch holes line; add title string to 2nd page; move 8th etc rests up half pitch)
 	Single/Chorded
 	Flagged
+		construct flag1_up, flag2_down, etc. blocks
 	Beamed
 		(Tuplet Number)
+		construct beam1, beam2, etc. blocks
 	Upstem
+		generate stem12, etc. blocks
 	Downstem
 	Two-waystem
 	Pitched (String/Fret)/Non-pitched (=ghost note)
 	Paused (=rest)
 		see "Duration"
+		"Maestro Font Rests": Quarter (206/140) Eighth (228/137) Sixteenth (197/269) Thirty-Second (168/174)
 	Parenthesized
 	Duration
-		Tuplet (Quarter(1) Eighth(2) 3 Sixteenth(4) 5 6 7 Thirty-Second(8) 9 10 11 12 ?Sixty-Fourth)
+		Tuplet Quarter(1) Eighth(2) 3 Sixteenth(4) 5 6 7 Thirty-Second(8) 9 10 11 12 ?Sixty-Fourth <--
 		Dot
-		Tie Line
+		Tie Line 0.50 mm
 	Tuplet Bracket
 		Upstem
 		Downstem
