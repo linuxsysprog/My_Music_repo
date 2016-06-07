@@ -94,7 +94,7 @@ x overhaul styles
 		Upstem
 		Downstem
 	Upstem <--
-		generate stem12, etc. blocks
+		construct stem3 stem4 stem5 stem6 stem7 stem8 stem9 stem10 stem11 stem12 blocks
 	Downstem
 	Two-waystem
 	Pitched (String/Fret)/Non-pitched (=ghost note)
