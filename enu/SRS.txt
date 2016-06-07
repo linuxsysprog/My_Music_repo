@@ -81,7 +81,7 @@ x overhaul styles
 	x reassemble blocks on layer blk; pay attention to layer/insert point (always bottom-left, top-right or middle-center)
 	x insert blocks
 	x insert non-blocks; check drawing
---- (fix punch holes line; add title string to 2nd page; move 8th etc rests up half pitch)
+--- (move 8th etc rests up half pitch)
 	Single/Chorded
 	Flagged
 		construct flag1_up, flag2_down, etc. blocks
