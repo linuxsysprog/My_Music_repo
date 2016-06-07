@@ -83,8 +83,8 @@ x overhaul styles
 	x insert non-blocks; check drawing
 --- (move 8th etc rests up half pitch)
 	Single/Chorded
-	Flagged <--
-		construct flag1_up, flag2_down, etc. blocks
+	Flagged
+		construct flag1_up flag2_up flag3_up flag1_down flag2_down flag3_down blocks
 	Beamed
 		(Tuplet Number)
 		construct tuplet_number_up tuplet_number_down blocks
@@ -93,7 +93,7 @@ x overhaul styles
 		construct blocks: tuplet_bracket_up tuplet_bracket_down
 		Upstem
 		Downstem
-	Upstem
+	Upstem <--
 		generate stem12, etc. blocks
 	Downstem
 	Two-waystem
