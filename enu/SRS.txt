@@ -81,7 +81,7 @@ x overhaul styles
 	x reassemble blocks on layer blk; pay attention to layer/insert point (preferably bottom-left, top-right or middle-center)
 	x insert blocks
 	x insert non-blocks; check drawing
---- (move 8th etc rests up half pitch)
+---
 	Single/Chorded
 	Flagged
 		construct flag1_up flag2_up flag3_up flag1_down flag2_down flag3_down blocks
@@ -98,7 +98,7 @@ x overhaul styles
 	Downstem
 	Two-waystem
 	Pitched (String/Fret)/Non-pitched (=ghost note)
-	Paused (=rest) <--
+	Paused (=rest)
 		see "Duration"
 		"Maestro Font Rests": Quarter (206/140) Eighth (228/137) Sixteenth (197/269) Thirty-Second (168/174)
 	Parenthesized
@@ -106,7 +106,7 @@ x overhaul styles
 		Tuplet Quarter(1) Eighth(2) 3 Sixteenth(4) 5 6 7 Thirty-Second(8) 9 10 11 12 ?Sixty-Fourth
 		Dot (107/46)
 		Tie Line 0.50 mm
-Articulations (=right hand)
+Articulations (=right hand) <--
 	Upbow
 	Downbow
 	Bow Bracket
