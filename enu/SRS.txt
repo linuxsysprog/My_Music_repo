@@ -81,7 +81,7 @@ x overhaul styles
 	x reassemble blocks on layer blk; pay attention to layer/insert point (preferably bottom-left, top-right or middle-center)
 	x insert blocks
 	x insert non-blocks; check drawing
---- (add textstyles width5 width8 width12; move 8th etc rests up half pitch)
+--- (move 8th etc rests up half pitch)
 	Single/Chorded
 	Flagged
 		construct flag1_up flag2_up flag3_up flag1_down flag2_down flag3_down blocks
@@ -93,12 +93,12 @@ x overhaul styles
 		construct blocks: tuplet_bracket_up tuplet_bracket_down
 		Upstem
 		Downstem
-	Upstem <--
+	Upstem
 		construct stem3 stem4 stem5 stem6 stem7 stem8 stem9 stem10 stem11 stem12 blocks
 	Downstem
 	Two-waystem
 	Pitched (String/Fret)/Non-pitched (=ghost note)
-	Paused (=rest)
+	Paused (=rest) <--
 		see "Duration"
 		"Maestro Font Rests": Quarter (206/140) Eighth (228/137) Sixteenth (197/269) Thirty-Second (168/174)
 	Parenthesized
