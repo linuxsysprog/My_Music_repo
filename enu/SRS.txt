@@ -81,7 +81,7 @@ x overhaul styles
 	x reassemble blocks on layer blk; pay attention to layer/insert point (preferably bottom-left, top-right or middle-center)
 	x insert blocks
 	x insert non-blocks; check drawing
---- (move 8th etc rests up half pitch)
+--- (add textstyles width5 width8 width12; move 8th etc rests up half pitch)
 	Single/Chorded
 	Flagged
 		construct flag1_up flag2_up flag3_up flag1_down flag2_down flag3_down blocks
