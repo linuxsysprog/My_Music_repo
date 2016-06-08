@@ -106,7 +106,7 @@ x overhaul styles
 		Tuplet Quarter(1) Eighth(2) 3 Sixteenth(4) 5 6 7 Thirty-Second(8) 9 10 11 12 ?Sixty-Fourth
 		Dot (107/46)
 		Tie Line 0.50 mm
-Articulations (=right hand) <-- (offset chorded note; add phrasing slur)
+Articulations (=right hand) <-- (add phrasing slur; add colors to model space)
 	Upbow (178/118/259)
 	Downbow (179/260)
 	Bow Bracket
