@@ -106,19 +106,22 @@ x overhaul styles
 		Tuplet Quarter(1) Eighth(2) 3 Sixteenth(4) 5 6 7 Thirty-Second(8) 9 10 11 12 ?Sixty-Fourth
 		Dot (107/46)
 		Tie Line 0.50 mm
-Articulations (=right hand) <--
-	Upbow
-	Downbow
+Articulations (=right hand) <-- (bring objects to front; do not explode blocks; offset chorded note; add phrasing slur)
+	Upbow (178/118/259)
+	Downbow (179/260)
 	Bow Bracket
 	Bow Parenthesized
-	Bow Alt
-	Staccato
-	Accent
+ 	Bow Alt
+	Staccato (./46/107)
+	Accent (Shift-./62)
 	Accent Parenthesized
-	Up Arpeggio
+	Up Arpeggio (G/103)
 	Down Arpeggio
-	Tap
+	Tap (132/43/136/209)
 	Simile
+	Hammer-on Slur
+	Pull-off Slur
+	Combination Slur
 Fingering(=left hand)
 	Fingering Numbers (1 2 3 4)
 	Shift Line
