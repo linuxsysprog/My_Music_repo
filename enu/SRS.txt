@@ -124,6 +124,8 @@ Articulations (=right hand)
 	Combination Slur
 Fingering(=left hand) <--
 	Fingering Numbers (1 2 3 4)
+		construct finger1, etc. blocks
+	Barre Bracket
 	Shift Line
 	Slide Line
 	Hammer-on Slur
