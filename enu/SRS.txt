@@ -106,7 +106,7 @@ x overhaul styles
 		Tuplet Quarter(1) Eighth(2) 3 Sixteenth(4) 5 6 7 Thirty-Second(8) 9 10 11 12 ?Sixty-Fourth
 		Dot (107/46)
 		Tie Line 0.50 mm
-Articulations (=right hand) <--
+Articulations (=right hand)
 	Upbow (178/118/259)
 	Downbow (179/260)
 	Bow Bracket
@@ -122,7 +122,7 @@ Articulations (=right hand) <--
 	Hammer-on Slur
 	Pull-off Slur
 	Combination Slur
-Fingering(=left hand)
+Fingering(=left hand) <--
 	Fingering Numbers (1 2 3 4)
 	Shift Line
 	Slide Line
