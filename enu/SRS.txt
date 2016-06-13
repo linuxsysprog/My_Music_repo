@@ -125,6 +125,7 @@ Articulations (=right hand)
 Fingering(=left hand) <--
 	- get rid of blk and layout layers, dashed plotstyle
 	- colorify model space according to plotstyle colors
+	- make all plotstyles akin Normal
 	- remove beat barlines
 	- re-space (3+3+2)x3 group
 	- change rest font symbols justification to Center for easy placement
