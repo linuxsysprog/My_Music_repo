@@ -123,7 +123,8 @@ Articulations (=right hand)
 	Pull-off Slur
 	Combination Slur
 Fingering(=left hand) <--
-	- get rid of blk and layout layers, dashed plotstyle
+	---
+	x get rid of blk and layout layers, dashed plotstyle
 	- colorify model space according to plotstyle colors
 	- make all plotstyles akin Normal
 	- remove beat barlines
@@ -131,6 +132,7 @@ Fingering(=left hand) <--
 	- change rest font symbols justification to Center for easy placement
 	- clean everything up
 	- layout blocks/examples on a separate page; include examples of all elements
+	---
 	Fingering Numbers (1 2 3 4)
 	Barre Bracket
 	Shift Line
