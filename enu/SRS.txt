@@ -129,7 +129,7 @@ Fingering(=left hand) <--
 	x colorify model space according to plotstyle colors
 	? re-apply plotstyles to objects, rather than its consistuents
 	x staff block: remove beat barlines
-	- decommission txt layer
+	- decommission txt layer/plotstyle
 	- re-space (3+3+2)x3 group
 	- change rest font symbols justification to Center for easy placement
 	- clean everything up
