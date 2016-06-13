@@ -127,8 +127,9 @@ Fingering(=left hand) <--
 	x get rid of blk and layout layers, dashed plotstyle
 	x make all plotstyles akin Normal (all non-essential properties by object)
 	x colorify model space according to plotstyle colors
-	- re-apply plotstyles on by-object basis
-	- remove beat barlines
+	? re-apply plotstyles to objects, rather than its consistuents
+	x staff block: remove beat barlines
+	- decommission txt layer
 	- re-space (3+3+2)x3 group
 	- change rest font symbols justification to Center for easy placement
 	- clean everything up
