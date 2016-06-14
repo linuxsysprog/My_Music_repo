@@ -131,10 +131,17 @@ Fingering(=left hand) <--
 	x staff block: remove beat barlines
 	- decommission txt layer/plotstyle
 		x create a drawing based on template as examples backup; delete all examples
-		- create tmp layer
-		- explode/purge all txt/attr blocks on tmp layer
-		- move exploded primitives onto tmp layer
-		- purge txt layer
+		x create tmp layer
+		x explode all blocks with txt/attr on tmp layer
+			repeat_forward_times
+			title_blk
+			title_blk_short
+			tuplet_number_down
+			tuplet_number_up
+			staff
+			page
+		x move all objects to tmp layer
+		- purge txt/attr blocks; purge txt layer
 		- reassemble blocks
 		- delete tmp layer
 	- layout blocks/examples on a separate page; include examples of all elements
