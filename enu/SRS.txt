@@ -146,8 +146,10 @@ Fingering(=left hand)
 		x reassemble blocks
 		x delete tmp layer
 	- layout blocks/examples on a separate page; include examples of all elements
-		- re-space (3+3+2)x3 group
-		- change rest font symbols justification to Center for easy placement
+		x re-space (3+3+2)x3 group
+		x change rest font symbols justification to Center for easy placement
+		! move grey plotstyle to mline consistuent lines
+		- readjust insertion points of art/finger objects
 	- clean everything up
 	---
 	Fingering Numbers (1 2 3 4)
