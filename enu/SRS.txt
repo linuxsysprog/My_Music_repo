@@ -129,7 +129,7 @@ Fingering(=left hand) <--
 	x colorify model space according to plotstyle colors
 	? re-apply plotstyles to objects, rather than its consistuents
 	x staff block: remove beat barlines
-	- decommission txt layer/plotstyle
+	x decommission txt layer/plotstyle
 		x create a drawing based on template as examples backup; delete all examples
 		x create tmp layer
 		x explode all blocks with txt/attr on tmp layer
@@ -143,8 +143,8 @@ Fingering(=left hand) <--
 		x move all objects to tmp layer
 		x purge txt/attr blocks; purge txt layer; purge txt style
 		x assign objects to layers
-		- reassemble blocks
-		- delete tmp layer
+		x reassemble blocks
+		x delete tmp layer
 	- layout blocks/examples on a separate page; include examples of all elements
 		- re-space (3+3+2)x3 group
 		- change rest font symbols justification to Center for easy placement
