@@ -142,6 +142,7 @@ Fingering(=left hand) <--
 			page
 		x move all objects to tmp layer
 		x purge txt/attr blocks; purge txt layer; purge txt style
+		x assign objects to layers
 		- reassemble blocks
 		- delete tmp layer
 	- layout blocks/examples on a separate page; include examples of all elements
