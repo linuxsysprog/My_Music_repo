@@ -122,8 +122,8 @@ Articulations (=right hand)
 	Hammer-on Slur
 	Pull-off Slur
 	Combination Slur
-Fingering(=left hand) <--
-	---
+Fingering(=left hand)
+	--- <--
 	x get rid of blk and layout layers, dashed plotstyle
 	x make all plotstyles akin Normal (all non-essential properties by object)
 	x colorify model space according to plotstyle colors
