@@ -130,10 +130,17 @@ Fingering(=left hand) <--
 	? re-apply plotstyles to objects, rather than its consistuents
 	x staff block: remove beat barlines
 	- decommission txt layer/plotstyle
-	- re-space (3+3+2)x3 group
-	- change rest font symbols justification to Center for easy placement
-	- clean everything up
+		x create a drawing based on template as examples backup; delete all examples
+		- create tmp layer
+		- explode/purge all txt/attr blocks on tmp layer
+		- move exploded primitives onto tmp layer
+		- purge txt layer
+		- reassemble blocks
+		- delete tmp layer
 	- layout blocks/examples on a separate page; include examples of all elements
+		- re-space (3+3+2)x3 group
+		- change rest font symbols justification to Center for easy placement
+	- clean everything up
 	---
 	Fingering Numbers (1 2 3 4)
 	Barre Bracket
