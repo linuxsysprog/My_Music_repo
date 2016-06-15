@@ -167,13 +167,13 @@ Fingering(=left hand)
 	Combination Slur
 	LHTap
 	LHSimile
-	Pitch Bend Spline (=Vibrato and bends) <--
+	Pitch Bend Spline (=Vibrato and bends)
 	Floor Line
 	Ceiling Line
 	Floor Number (0 1/2 Full "1 1/2" 2)
 	Ceiling Number (same as above)
 	Spline Text (1234 () F w A sh ll) [Fingers wrist Arm Push Pull]
-- revise naming scheme for named objects
+- revise naming scheme for named objects <--
 - revise attributes: tags, prompts, values and modes
 - check/fix bug with z-order (also dashed punch holes)
 - develop a set of ACAD templates
