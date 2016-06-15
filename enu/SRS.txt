@@ -149,6 +149,12 @@ Fingering(=left hand)
 		x re-space (3+3+2)x3 group
 		x change rest font symbols justification to Center for easy placement
 		! move grey plotstyle to mline consistuent lines
+		x redesign repeats
+			barline_double
+			barline_end
+			repeat_backward
+			repeat_forward
+			repeat_forward_times
 		- readjust insertion points of art/finger objects
 	- clean everything up
 	---
