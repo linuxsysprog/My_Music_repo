@@ -173,9 +173,9 @@ Fingering(=left hand)
 	Floor Number (0 1/2 Full "1 1/2" 2)
 	Ceiling Number (same as above)
 	Spline Text (1234 () F w A sh ll) [Fingers wrist Arm Push Pull]
-- revise naming scheme for named objects <--
-- revise attributes: tags, prompts, values and modes
-- check/fix bug with z-order (also dashed punch holes)
+x revise naming scheme for named objects
+x revise attributes: tags, prompts, values and modes
+x check/fix bug with z-order (! also dashed punch holes)
 - develop a set of ACAD templates
 	- write install.bat to install *.dwt, *.stb, *.pss, *.pc3 files
 	- setup Drawing, create a Template (Chapter 8)
@@ -428,7 +428,7 @@ Fingering(=left hand)
 		?Modify->Object->Hatch... (HE,        *HATCHEDIT)
 			* grips; Tools->Options...->Selection->Associative Hatch
 		* Hatch Pattern Palette->Other Predefined->Solid; Swatch->Select Color...; fill/regen, FILLMODE
-	- create a set of tool palettes (Chapter 20.6) (Glitchy!)
+	? create a set of tool palettes (Chapter 20.6) (Glitchy!)
 		Tools->Customize->Tool Palettes...->Import.../Export... (*.xtp)
 		Tools->Tool Palettes Window
 			->Transparency...: TBD
@@ -503,6 +503,7 @@ Fingering(=left hand)
 	- develop a set of user tool palettes
 - create a set of recipes
 - develop in parallel: template, example drawing, support files; commit as you go
+- create Trilogy drawing; document and backport to template all "enlightments" <--
 - make a new system image w/ a) ACAD template system b) Finale w/ font pack
 - maintain a list of "enlightments"
 	- 4(2) beats per staff - "single(double) density"
@@ -512,7 +513,7 @@ Fingering(=left hand)
 	- use multiline for staves/beams
 	- use splines for intonation markings/arpeggios
 	- do not differentiate grace notes
-	- do not employ subbeams
+	! do not employ subbeams
 	- use fixed music spacing
 	- do not use a tie to extend note's duration, use a horizontal line instead
 - enumerate resources
