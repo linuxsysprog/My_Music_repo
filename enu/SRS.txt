@@ -123,7 +123,7 @@ Articulations (=right hand)
 	Pull-off Slur
 	Combination Slur
 Fingering(=left hand)
-	--- <--
+	---
 	x get rid of blk and layout layers, dashed plotstyle
 	x make all plotstyles akin Normal (all non-essential properties by object)
 	x colorify model space according to plotstyle colors
@@ -145,7 +145,7 @@ Fingering(=left hand)
 		x assign objects to layers
 		x reassemble blocks
 		x delete tmp layer
-	- layout blocks/examples on a separate page; include examples of all elements
+	x layout blocks/examples on a separate page; include examples of all elements
 		x re-space (3+3+2)x3 group
 		x change rest font symbols justification to Center for easy placement
 		! move grey plotstyle to mline consistuent lines
@@ -155,8 +155,8 @@ Fingering(=left hand)
 			repeat_backward
 			repeat_forward
 			repeat_forward_times
-		- readjust insertion points of art/finger objects
-	- clean everything up
+		x readjust insertion points of art/finger objects
+	x clean everything up
 	---
 	Fingering Numbers (1 2 3 4)
 	Barre Bracket
@@ -167,7 +167,7 @@ Fingering(=left hand)
 	Combination Slur
 	LHTap
 	LHSimile
-	Pitch Bend Spline (=Vibrato and bends)
+	Pitch Bend Spline (=Vibrato and bends) <--
 	Floor Line
 	Ceiling Line
 	Floor Number (0 1/2 Full "1 1/2" 2)
