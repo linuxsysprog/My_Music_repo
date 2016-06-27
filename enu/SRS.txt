@@ -504,6 +504,17 @@ x check/fix bug with z-order (! also dashed punch holes)
 - create a set of recipes
 - develop in parallel: template, example drawing, support files; commit as you go
 - create Trilogy drawing; document and backport to template all "enlightments" <--
+	x delete tuplet num blocks; use height25 MC instead
+	x redefine insert point for bow/barre brackets, shift line blocks
+	x set art textstyle height to 1.5
+	x create textstyle aliases ?) purge unused textstyles
+	x update examples page
+	- in template, check finger (slurs) vertical placement
+	- for chorded notes, move stem to the middle
+	- breakdown staff block, multiline; assign grey plotstyle to lines; change attr to txt
+	- shift line: move insertion point .8
+	- change insert point of forward repeats
+	- 
 - make a new system image w/ a) ACAD template system b) Finale w/ font pack
 - maintain a list of "enlightments"
 	- 4(2) beats per staff - "single(double) density"
