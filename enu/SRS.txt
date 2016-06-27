@@ -503,7 +503,7 @@ x check/fix bug with z-order (! also dashed punch holes)
 	- develop a set of user tool palettes
 - create a set of recipes
 - develop in parallel: template, example drawing, support files; commit as you go
-- create Trilogy drawing; document and backport to template all "enlightments" <--
+x create Trilogy drawing; document and backport to template all "enlightments"
 	x delete tuplet num blocks; use height25 MC instead
 	x redefine insert point for bow/barre brackets, shift line blocks
 	x set art textstyle height to 1.5
@@ -520,8 +520,7 @@ x check/fix bug with z-order (! also dashed punch holes)
 	x forward repeats times: change attr to txt
 	x move up ceiling for 1 1/2 spline
 	? remove block nesting
-	- create a set of 10 blank pages
-	- 
+	x create a set of 10 blank pages
 - make a new system image w/ a) ACAD template system b) Finale w/ font pack
 - maintain a list of "enlightments"
 	- 4(2) beats per staff - "single(double) density"
