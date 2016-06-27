@@ -512,12 +512,14 @@ x check/fix bug with z-order (! also dashed punch holes)
 	x for chorded notes, move stem to the middle
 	x create an extended set of flag blocks
 	x add examples of up/down flags
-	- in template, check finger (slurs) vertical placement
-	- breakdown staff block, multiline; assign grey plotstyle to lines; change attr to txt
-	- shift line: move insertion point .8
+	! in template, check finger (slurs) vertical placement
+	x breakdown staff block, multiline; assign grey plotstyle to lines; change attr to txt
+	x flatten beam blocks
 	- change insert point of forward repeats
 	- move up ceiling for 1 1/2 spline
 	? remove block nesting
+	- create an array of points of 10 mm pitch
+	- create a set of 10 blank pages
 	- 
 - make a new system image w/ a) ACAD template system b) Finale w/ font pack
 - maintain a list of "enlightments"
