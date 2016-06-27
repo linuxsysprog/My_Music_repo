@@ -509,11 +509,15 @@ x check/fix bug with z-order (! also dashed punch holes)
 	x set art textstyle height to 1.5
 	x create textstyle aliases ?) purge unused textstyles
 	x update examples page
+	x for chorded notes, move stem to the middle
+	x create an extended set of flag blocks
+	x add examples of up/down flags
 	- in template, check finger (slurs) vertical placement
-	- for chorded notes, move stem to the middle
 	- breakdown staff block, multiline; assign grey plotstyle to lines; change attr to txt
 	- shift line: move insertion point .8
 	- change insert point of forward repeats
+	- move up ceiling for 1 1/2 spline
+	? remove block nesting
 	- 
 - make a new system image w/ a) ACAD template system b) Finale w/ font pack
 - maintain a list of "enlightments"
