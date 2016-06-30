@@ -1,0 +1,122 @@
+[BEGIN] --- AutoCAD entities (* varieties exist; _ block; % txt/attr; $ Finale(AutoCAD) font; ^ graphic element)
+[structure]
+_title_blk*
+	%title
+	%composed by
+	%transcribed by
+	%tempo
+	%key signature
+	%time signature
+	%filename
+	%revision
+	%page number
+	%page of
+_page
+	%section name
+		_staff
+			%measure number*
+				%parenthesis
+			%beat number
+			_barline*
+			_repeat*
+			_parenthesis_staff
+[note]
+	$parenthesis
+	%parenthesis
+	[pitch]
+		%notehead*
+	[duration]
+		_stem*
+		_flag*
+		_beam*
+		$extended duration dot
+		^tie line
+		%tuplet number
+		_tuplet_bracket*
+		$rest*
+	[dynamics]
+		$accent
+	[phrasing]
+		^legato slur
+		$staccato dot
+[art]
+	%simile
+	$parenthesis
+	^alt line
+	[RH]
+		$stroke*
+		%palm muting
+		_bow_bracket
+		$pick attack
+		$pick staccato
+		_arp*
+	[RH->LH]
+		$tap
+		^hammer-on/pull-off slur
+	[RH AUX]
+		%tremolo arm
+		%pick fretboard scratch
+		%pick rake
+		%volume knob
+		%pickup switch
+		^intonation curve w/ comments
+	[LH]
+		%finger number
+		_barre_bracket
+	[LH SHIFT]
+		_shift_line
+		^slide line
+	[LH LEGATO]
+		^hammer-on/pull-off slur
+		%tap
+	[LH VB]
+		^intonation curve w/ comments
+[END] --- AutoCAD entities
+[OBSOLETE] --- !!!
+	- statistics
+		/* page title_blk(_short) */
+		- title: Yngwie Malmsteen Speed Lesson
+		- composed by: Yngwie Malmsteen
+		- transcribe by: Andrey Chislenko
+		- tempo: 138
+		- time signature: 4/4
+		- key signature: TBD
+	- structure
+		/* staff barline_(double/end) repeat_backward repeat_forward(_times) repeat_hatch parenthesis_staff*/
+		/* section name/measure number/beat number */
+		- Take2 1.1
+		- TBD
+	- note
+		/* beam1-3 flag1_str1-6 flag2_str1-6 flag3_str1-6 stem3-12 tuplet_bracket_down(_up) */
+pitch   - rest/pitched/parenthesized
+dura    - flag/beam/tuplet number(bracket)/duration dot/tie line
+dyna    - accent/parenthesized
+art     - staccato dot/legato slur
+chords  - double stops/chorded3-6/voiced
+	- articulation
+		/* arp(_return) bow_bracket */
+		/* simile/alt articulation line */
+		- pick/palm edge/picking position along the string
+			- single (up)downstroke/parenthesized/pick crunch dot (picked note)/accented stroke [ACCENT]
+			- double/chorded3-6 (up)downstroke/arpeggiated stroke
+			- pick (up)downdamp dot/palm mute (PM) dot/bracket [STACCATO]
+			- sweep downstroke bracket [LEGATO]
+		- aux: tremolo arm/volume knob/pickup switch
+			- tremolo (arm) intonation curve
+		- fretboarding: finger/pick
+			- pick/finger hammer-on/pull-off/tap/lift-off plus sign/slur [LEGATO]
+			- pick fretboard scratch [FX/STACCATO/ACCENT]
+	- fingering
+		/* barre_bracket shift_line */
+		/* simile/finger number 1-4/thumb T/ */
+		- playing in one position
+			- finger/barre/thumb
+			- finger tap/lift-off
+		- shifting
+			- wrist shift
+		- legato playing
+		- vibrato and bends (VB)
+			- wrist twist
+		/ghost/open string
+	- common
+		- pick rake=LH ghost+sweep [ACCENT]
