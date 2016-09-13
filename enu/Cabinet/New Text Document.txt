@@ -1,0 +1,10 @@
+Width: 380.8
+Height: 281.7
+Depth: 248
+
+Angle bar: 31
+
+Stock: 639.8362x487.0000
+
+Stock: 614.8000x538.0002
+
