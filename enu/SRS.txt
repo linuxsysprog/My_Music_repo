@@ -738,29 +738,29 @@ XR,        *XREF
 Z,         *ZOOM
 
 - single-letter aliases from above list
-A,         *ARC <Arc->2 Points + Radius: A,Alphacam>
-B,         *BLOCK <Break: B,Alphacam>
-C,         *CIRCLE <Circle->Center + Radius: C,Alphacam>
-D,         *DIMSTYLE <Distance/Angle: D,Alphacam>
-E,         *ERASE <Extend: E,Alphacam>
-F,         *FILLET <Fillet: F,Alphacam>
-G,         *GROUP <Group: G,Alphacam>
-H,         *BHATCH <Hide Parts: H,Alphacam>
-I,         *INSERT <Mirror: I,Alphacam>
-J  <Join: J,Alphacam>
-K <undef,Alphacam>
-L,         *LINE <Line: L,Alphacam>
-M,         *MOVE <Move: M,Alphacam>
-N <Work Planes->By Name: N,Alphacam>
-O,         *OFFSET <Offset: O,Alphacam>
-P,         *PAN <Line Properties: P,Alphacam>
-Q  <undef,Alphacam>
-R,         *REDRAW <Rectangle: R,Alphacam>
-S,         *STRETCH <Stretch: S,Alphacam>
-T,         *MTEXT <Trim: T,Alphacam>
-U <UnGroup: U,Alphacam>
-V,         *VIEW <Set Work Volume: V,Alphacam>
-W,         *WBLOCK <undef,Alphacam>
-X,         *EXPLODE <Explode: X,Alphacam>
-Y <undef,Alphacam>
-Z,         *ZOOM <Zoom All: Ctrl+A,Z,Alphacam>
+A,         *ARC
+B,         *BLOCK
+C,         *CIRCLE
+D,         *DIMSTYLE
+E,         *ERASE
+F,         *FILLET
+G,         *GROUP
+H,         *BHATCH
+I,         *INSERT
+J
+K
+L,         *LINE
+M,         *MOVE
+N
+O,         *OFFSET
+P,         *PAN
+Q
+R,         *REDRAW
+S,         *STRETCH
+T,         *MTEXT
+U
+V,         *VIEW
+W,         *WBLOCK
+X,         *EXPLODE
+Y
+Z,         *ZOOM
